@@ -1,0 +1,5709 @@
+{
+  "protocol": "Fixed 252-day history and monthly rebalance; EWMA decay selected on 2013-2018 volatility only; frozen 2019-2025 evaluation",
+  "data_sha256": "1c98c420fc57a6e2fce8bc29a11ec4b0f4ae2cce1996f909806e9d072facec97",
+  "historical_data_period": [
+    "1990-01-01",
+    "2012-12-31"
+  ],
+  "development_period": [
+    "2013-01-01",
+    "2018-12-31"
+  ],
+  "test_period": [
+    "2019-01-01",
+    "2025-12-31"
+  ],
+  "window": 252,
+  "weight_cap": 0.15,
+  "selected_ewma_decay": 0.99,
+  "development_grid": {
+    "0.94": {
+      "days": 1510,
+      "annualized_volatility": 0.10797874374667371,
+      "max_drawdown": -0.1625186048832108,
+      "annual_one_way_turnover": 5.778342154578366,
+      "var95": {
+        "exceptions": 134,
+        "observations": 1510,
+        "exception_rate": 0.08874172185430464,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 39.17229672429471,
+        "kupiec_pvalue": 3.8800679809653985e-10
+      },
+      "var99": {
+        "exceptions": 70,
+        "observations": 1510,
+        "exception_rate": 0.046357615894039736,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 106.97340976197108,
+        "kupiec_pvalue": 4.5118255036606875e-25
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.10024395738965919,
+          "annualized_volatility": 0.10797874374667368,
+          "max_drawdown": -0.1625186048832108
+        },
+        "5": {
+          "annualized_return": 0.09390307723952707,
+          "annualized_volatility": 0.10795942577336093,
+          "max_drawdown": -0.16394681810279188
+        },
+        "10": {
+          "annualized_return": 0.08759550310269626,
+          "annualized_volatility": 0.10796649034441674,
+          "max_drawdown": -0.1653734949887442
+        },
+        "25": {
+          "annualized_return": 0.06887103870919797,
+          "annualized_volatility": 0.10814583107943553,
+          "max_drawdown": -0.16964431557051374
+        }
+      }
+    },
+    "0.97": {
+      "days": 1510,
+      "annualized_volatility": 0.10501074645515772,
+      "max_drawdown": -0.15411113448496938,
+      "annual_one_way_turnover": 3.9872712306433606,
+      "var95": {
+        "exceptions": 99,
+        "observations": 1510,
+        "exception_rate": 0.06556291390728476,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 7.04256135755827,
+        "kupiec_pvalue": 0.007959512203422562
+      },
+      "var99": {
+        "exceptions": 54,
+        "observations": 1510,
+        "exception_rate": 0.03576158940397351,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 60.84438923727248,
+        "kupiec_pvalue": 6.1769301531711206e-15
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.11327189472579069,
+          "annualized_volatility": 0.10501074645515773,
+          "max_drawdown": -0.15411113448496938
+        },
+        "5": {
+          "annualized_return": 0.1088409837771922,
+          "annualized_volatility": 0.10499594513348112,
+          "max_drawdown": -0.1575604193176805
+        },
+        "10": {
+          "annualized_return": 0.10442605032607766,
+          "annualized_volatility": 0.10499487695138597,
+          "max_drawdown": -0.1609970648661967
+        },
+        "25": {
+          "annualized_return": 0.09127659781573594,
+          "annualized_volatility": 0.1050740485071775,
+          "max_drawdown": -0.17123157723494786
+        }
+      }
+    },
+    "0.99": {
+      "days": 1510,
+      "annualized_volatility": 0.10364641600634122,
+      "max_drawdown": -0.1611765701347716,
+      "annual_one_way_turnover": 2.118221074906552,
+      "var95": {
+        "exceptions": 95,
+        "observations": 1510,
+        "exception_rate": 0.06291390728476821,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 4.917688991906061,
+        "kupiec_pvalue": 0.026583052949441573
+      },
+      "var99": {
+        "exceptions": 39,
+        "observations": 1510,
+        "exception_rate": 0.025827814569536423,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 26.59577697252456,
+        "kupiec_pvalue": 2.5079133946442305e-07
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.11911590020380225,
+          "annualized_volatility": 0.10364641600634122,
+          "max_drawdown": -0.1611765701347716
+        },
+        "5": {
+          "annualized_return": 0.1167475933814981,
+          "annualized_volatility": 0.10363197835883282,
+          "max_drawdown": -0.16322061192760406
+        },
+        "10": {
+          "annualized_return": 0.11438373771981092,
+          "annualized_volatility": 0.10362226277985573,
+          "max_drawdown": -0.16526021109325484
+        },
+        "25": {
+          "annualized_return": 0.10731880336145427,
+          "annualized_volatility": 0.10362145850859295,
+          "max_drawdown": -0.17135243808606293
+        }
+      }
+    }
+  },
+  "cost_definition": "bps charged on sum(abs(target minus drifted pre-trade weights)); exact multiplicative wealth deduction before daily return",
+  "risk_definition": "Zero-mean Gaussian 95/99% one-day VaR; covariance frozen between monthly updates, daily drifted weights; gross returns evaluated",
+  "initial_state": "Equal weights before first day of each evaluation period; first rebalance turnover is charged",
+  "stress_windows": {
+    "covid_2020": [
+      "2020-02-19",
+      "2020-04-30"
+    ],
+    "inflation_2022": [
+      "2022-01-01",
+      "2022-12-31"
+    ],
+    "april_2025": [
+      "2025-04-01",
+      "2025-04-30"
+    ]
+  },
+  "test": {
+    "equal_weight": {
+      "days": 1760,
+      "annualized_volatility": 0.20378896308737676,
+      "max_drawdown": -0.38239527000805784,
+      "annual_one_way_turnover": 0.22159545177793688,
+      "var95": {
+        "exceptions": 76,
+        "observations": 1760,
+        "exception_rate": 0.04318181818181818,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 1.8021910217163395,
+        "kupiec_pvalue": 0.17944783657744556
+      },
+      "var99": {
+        "exceptions": 42,
+        "observations": 1760,
+        "exception_rate": 0.023863636363636365,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 24.604036019972057,
+        "kupiec_pvalue": 7.040412337334702e-07
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.15215341051692377,
+          "annualized_volatility": 0.20378896308737676,
+          "max_drawdown": -0.38239527000805784
+        },
+        "5": {
+          "annualized_return": 0.15189812427902716,
+          "annualized_volatility": 0.20378909215703592,
+          "max_drawdown": -0.3824022201209667
+        },
+        "10": {
+          "annualized_return": 0.15164288947014537,
+          "annualized_volatility": 0.20378924210499222,
+          "max_drawdown": -0.38240917023387533
+        },
+        "25": {
+          "annualized_return": 0.15087749352413327,
+          "annualized_volatility": 0.2037898172181508,
+          "max_drawdown": -0.38243002057260067
+        }
+      }
+    },
+    "inverse_vol": {
+      "days": 1760,
+      "annualized_volatility": 0.19317148820329988,
+      "max_drawdown": -0.3735736447869319,
+      "annual_one_way_turnover": 0.23969952054515756,
+      "var95": {
+        "exceptions": 83,
+        "observations": 1760,
+        "exception_rate": 0.04715909090909091,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 0.3045669617496287,
+        "kupiec_pvalue": 0.5810334104303476
+      },
+      "var99": {
+        "exceptions": 41,
+        "observations": 1760,
+        "exception_rate": 0.023295454545454546,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 22.860872018015357,
+        "kupiec_pvalue": 1.7416138726235544e-06
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.1406139193321514,
+          "annualized_volatility": 0.19317148820329988,
+          "max_drawdown": -0.3735736447869319
+        },
+        "5": {
+          "annualized_return": 0.14034054417533226,
+          "annualized_volatility": 0.1931722434139966,
+          "max_drawdown": -0.3735856905332867
+        },
+        "10": {
+          "annualized_return": 0.1400672279164603,
+          "annualized_volatility": 0.19317302734279046,
+          "max_drawdown": -0.37359773627964166
+        },
+        "25": {
+          "annualized_return": 0.13924763241359162,
+          "annualized_volatility": 0.19317555143419463,
+          "max_drawdown": -0.37363387351870636
+        }
+      }
+    },
+    "sample": {
+      "days": 1760,
+      "annualized_volatility": 0.1529581226989741,
+      "max_drawdown": -0.2948215274707028,
+      "annual_one_way_turnover": 1.4134488582680749,
+      "var95": {
+        "exceptions": 93,
+        "observations": 1760,
+        "exception_rate": 0.05284090909090909,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 0.2938253134535671,
+        "kupiec_pvalue": 0.5877795433487176
+      },
+      "var99": {
+        "exceptions": 43,
+        "observations": 1760,
+        "exception_rate": 0.024431818181818183,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 26.395987714142052,
+        "kupiec_pvalue": 2.7811760094049476e-07
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.10093218910378132,
+          "annualized_volatility": 0.15295812269897413,
+          "max_drawdown": -0.2948215274707028
+        },
+        "5": {
+          "annualized_return": 0.09937702399913872,
+          "annualized_volatility": 0.15295806233170306,
+          "max_drawdown": -0.2949084592692467
+        },
+        "10": {
+          "annualized_return": 0.09782375002254051,
+          "annualized_volatility": 0.15295976399739492,
+          "max_drawdown": -0.29499539106779016
+        },
+        "25": {
+          "annualized_return": 0.09317525457262943,
+          "annualized_volatility": 0.15297544029979693,
+          "max_drawdown": -0.295256186463421
+        }
+      }
+    },
+    "ewma": {
+      "days": 1760,
+      "annualized_volatility": 0.15165213300377245,
+      "max_drawdown": -0.2801114314742691,
+      "annual_one_way_turnover": 1.9092808995269333,
+      "var95": {
+        "exceptions": 98,
+        "observations": 1760,
+        "exception_rate": 0.05568181818181818,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 1.1555383876650467,
+        "kupiec_pvalue": 0.28239276507293803
+      },
+      "var99": {
+        "exceptions": 42,
+        "observations": 1760,
+        "exception_rate": 0.023863636363636365,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 24.604036019972057,
+        "kupiec_pvalue": 7.040412337334702e-07
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.10578626643110622,
+          "annualized_volatility": 0.15165213300377248,
+          "max_drawdown": -0.2801114314742691
+        },
+        "5": {
+          "annualized_return": 0.10367678100158462,
+          "annualized_volatility": 0.15165336565202647,
+          "max_drawdown": -0.2803175541016635
+        },
+        "10": {
+          "annualized_return": 0.10157083441438508,
+          "annualized_volatility": 0.15165740094614819,
+          "max_drawdown": -0.280523676729058
+        },
+        "25": {
+          "annualized_return": 0.09527417538792982,
+          "annualized_volatility": 0.15168631969021515,
+          "max_drawdown": -0.28114204461124115
+        }
+      }
+    },
+    "ledoit_wolf": {
+      "days": 1760,
+      "annualized_volatility": 0.15308953022667188,
+      "max_drawdown": -0.2958863340745428,
+      "annual_one_way_turnover": 1.3783496791555496,
+      "var95": {
+        "exceptions": 95,
+        "observations": 1760,
+        "exception_rate": 0.05397727272727273,
+        "nominal_exception_rate": 0.050000000000000044,
+        "kupiec_lr": 0.5719618570014973,
+        "kupiec_pvalue": 0.4494803781962521
+      },
+      "var99": {
+        "exceptions": 43,
+        "observations": 1760,
+        "exception_rate": 0.024431818181818183,
+        "nominal_exception_rate": 0.010000000000000009,
+        "kupiec_lr": 26.395987714142052,
+        "kupiec_pvalue": 2.7811760094049476e-07
+      },
+      "cost_sensitivity": {
+        "0": {
+          "annualized_return": 0.10082146364802735,
+          "annualized_volatility": 0.15308953022667188,
+          "max_drawdown": -0.2958863340745428
+        },
+        "5": {
+          "annualized_return": 0.09930504408230201,
+          "annualized_volatility": 0.15309022943043038,
+          "max_drawdown": -0.2959787823506417
+        },
+        "10": {
+          "annualized_return": 0.09779041795898058,
+          "annualized_volatility": 0.15309263027154596,
+          "max_drawdown": -0.29607123062674057
+        },
+        "25": {
+          "annualized_return": 0.09325728153526502,
+          "annualized_volatility": 0.153110041534885,
+          "max_drawdown": -0.2963485754550368
+        }
+      }
+    }
+  },
+  "covariance_audits": {
+    "equal_weight": [
+      {
+        "date": "2019-01-02",
+        "history_start": "2017-12-29",
+        "history_end": "2018-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1001.7840908551946,
+        "min_eigenvalue": 5.0734462138788435e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-02-01",
+        "history_start": "2018-01-31",
+        "history_end": "2019-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.013922973430125286,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 955.9671246963715,
+        "min_eigenvalue": 5.79143104917593e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-03-01",
+        "history_start": "2018-02-28",
+        "history_end": "2019-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.012359376428472747,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 801.3495996869098,
+        "min_eigenvalue": 6.062159988859244e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-04-01",
+        "history_start": "2018-03-29",
+        "history_end": "2019-03-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.01466331145083049,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 753.1295823730372,
+        "min_eigenvalue": 6.197450786275676e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-05-01",
+        "history_start": "2018-04-30",
+        "history_end": "2019-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.014951569564458375,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 697.5333100452566,
+        "min_eigenvalue": 6.2743642728902465e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-06-03",
+        "history_start": "2018-05-31",
+        "history_end": "2019-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02069336377391797,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 737.5146522868226,
+        "min_eigenvalue": 6.347076632228807e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-07-01",
+        "history_start": "2018-06-28",
+        "history_end": "2019-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.012779094738707256,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 747.9589179583794,
+        "min_eigenvalue": 6.418677184498757e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-08-01",
+        "history_start": "2018-07-31",
+        "history_end": "2019-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.013800697092626994,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 748.6399801391417,
+        "min_eigenvalue": 6.4665473537025045e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-09-03",
+        "history_start": "2018-08-30",
+        "history_end": "2019-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.021041217096220297,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 895.2650294746302,
+        "min_eigenvalue": 6.231932017525489e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-10-01",
+        "history_start": "2018-09-28",
+        "history_end": "2019-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.014197759078092113,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 933.6824884569131,
+        "min_eigenvalue": 6.153766332640883e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-11-01",
+        "history_start": "2018-10-31",
+        "history_end": "2019-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.014753946350776929,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 799.9425380361203,
+        "min_eigenvalue": 6.5314098035315334e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-12-02",
+        "history_start": "2018-11-29",
+        "history_end": "2019-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.014443349276456784,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 755.0488247618061,
+        "min_eigenvalue": 6.309265971707607e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-01-02",
+        "history_start": "2019-01-02",
+        "history_end": "2019-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.012294500199275344,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 630.7011452087208,
+        "min_eigenvalue": 5.8047297815023075e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-02-03",
+        "history_start": "2019-02-01",
+        "history_end": "2020-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.019978647547995686,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 631.5693952747395,
+        "min_eigenvalue": 5.290652504421238e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-03-02",
+        "history_start": "2019-03-01",
+        "history_end": "2020-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.011253334974647379,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 678.5540378269102,
+        "min_eigenvalue": 5.9684520996087555e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-04-01",
+        "history_start": "2019-04-02",
+        "history_end": "2020-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.04729226694228849,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2641.1066357551153,
+        "min_eigenvalue": 7.001769163403882e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-05-01",
+        "history_start": "2019-05-02",
+        "history_end": "2020-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.019213977475388472,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2652.1660643347236,
+        "min_eigenvalue": 8.303135662831448e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-06-01",
+        "history_start": "2019-05-31",
+        "history_end": "2020-05-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.013524021156694137,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2558.944225357362,
+        "min_eigenvalue": 9.199250719055571e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-07-01",
+        "history_start": "2019-07-02",
+        "history_end": "2020-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.018070947914203918,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2635.3019356288446,
+        "min_eigenvalue": 9.658639826451344e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-08-03",
+        "history_start": "2019-08-02",
+        "history_end": "2020-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.020682525209435598,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2446.017018283612,
+        "min_eigenvalue": 1.056260400833124e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-09-01",
+        "history_start": "2019-09-03",
+        "history_end": "2020-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.021552577385333043,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2410.5932995880125,
+        "min_eigenvalue": 1.0452846642006674e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-10-01",
+        "history_start": "2019-10-02",
+        "history_end": "2020-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01567571671383093,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2300.5790068487354,
+        "min_eigenvalue": 1.1200103494450663e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-11-02",
+        "history_start": "2019-11-01",
+        "history_end": "2020-10-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.019389997865793495,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2152.4447086533078,
+        "min_eigenvalue": 1.2129158465251468e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-12-01",
+        "history_start": "2019-12-02",
+        "history_end": "2020-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02366344996305593,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2165.8726540661196,
+        "min_eigenvalue": 1.23935253127434e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-01-04",
+        "history_start": "2020-01-03",
+        "history_end": "2020-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.017612531614996492,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2171.0984242956365,
+        "min_eigenvalue": 1.2399021946101186e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-02-01",
+        "history_start": "2020-01-31",
+        "history_end": "2021-01-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.017736311379780486,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2165.968159624307,
+        "min_eigenvalue": 1.2608129285680708e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-03-01",
+        "history_start": "2020-02-28",
+        "history_end": "2021-02-26",
+        "history_rows": 252,
+        "one_way_turnover": 0.026539973915869958,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 2045.7620200516615,
+        "min_eigenvalue": 1.3100254048279024e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-04-01",
+        "history_start": "2020-04-01",
+        "history_end": "2021-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.020862849779608582,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1084.542702228875,
+        "min_eigenvalue": 1.16827335781618e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-05-03",
+        "history_start": "2020-05-01",
+        "history_end": "2021-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.009928959628086521,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1020.4108765468696,
+        "min_eigenvalue": 9.17540678058831e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-06-01",
+        "history_start": "2020-06-01",
+        "history_end": "2021-05-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.018442919557552843,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 876.6991899176707,
+        "min_eigenvalue": 8.86235982240041e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-07-01",
+        "history_start": "2020-07-01",
+        "history_end": "2021-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.018694666539693202,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 686.8173835379413,
+        "min_eigenvalue": 8.42641687586808e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-08-02",
+        "history_start": "2020-07-31",
+        "history_end": "2021-07-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.014536557333713743,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 744.6145208864928,
+        "min_eigenvalue": 7.650371814369488e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-09-01",
+        "history_start": "2020-09-01",
+        "history_end": "2021-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.015350376422086597,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 895.8853194000649,
+        "min_eigenvalue": 6.475457805682905e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-10-01",
+        "history_start": "2020-10-01",
+        "history_end": "2021-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01681597324082114,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 864.0827941238284,
+        "min_eigenvalue": 6.1735989854522145e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-11-01",
+        "history_start": "2020-10-30",
+        "history_end": "2021-10-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.019133839756814347,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 814.28576767592,
+        "min_eigenvalue": 6.099251570410945e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-12-01",
+        "history_start": "2020-12-01",
+        "history_end": "2021-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.019978861965009136,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 728.4478515623318,
+        "min_eigenvalue": 6.159169763795383e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-01-03",
+        "history_start": "2021-01-04",
+        "history_end": "2021-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01832873099016105,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 790.7885277494621,
+        "min_eigenvalue": 6.096248961795119e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-02-01",
+        "history_start": "2021-02-02",
+        "history_end": "2022-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02888683944928827,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 690.0322112558758,
+        "min_eigenvalue": 6.899645139778034e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-03-01",
+        "history_start": "2021-03-02",
+        "history_end": "2022-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.025869426245689005,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 732.764515247818,
+        "min_eigenvalue": 6.564625394154106e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-04-01",
+        "history_start": "2021-04-05",
+        "history_end": "2022-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02465242318293657,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 744.1515927215734,
+        "min_eigenvalue": 6.777857680672681e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-05-02",
+        "history_start": "2021-05-03",
+        "history_end": "2022-04-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.02947244031387968,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 799.473406728984,
+        "min_eigenvalue": 6.958605042532775e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-06-01",
+        "history_start": "2021-06-02",
+        "history_end": "2022-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.018276066731783995,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 984.4340500823898,
+        "min_eigenvalue": 6.870232762715144e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-07-01",
+        "history_start": "2021-07-01",
+        "history_end": "2022-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02053317353289504,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1062.4227780087535,
+        "min_eigenvalue": 7.5945855109123005e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-08-01",
+        "history_start": "2021-07-30",
+        "history_end": "2022-07-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.02410152775715814,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 946.8986847214311,
+        "min_eigenvalue": 8.818980707953725e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-09-01",
+        "history_start": "2021-09-01",
+        "history_end": "2022-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.014663504873729995,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 999.6377032841899,
+        "min_eigenvalue": 8.810469592734366e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-10-03",
+        "history_start": "2021-10-01",
+        "history_end": "2022-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.017569077975380383,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1101.382358290404,
+        "min_eigenvalue": 8.65570164347932e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-11-01",
+        "history_start": "2021-11-01",
+        "history_end": "2022-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.019818371756985864,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1242.4309269218436,
+        "min_eigenvalue": 8.468802245480482e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-12-01",
+        "history_start": "2021-12-01",
+        "history_end": "2022-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01921202822054733,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1402.0035062998052,
+        "min_eigenvalue": 8.232574910853814e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-01-03",
+        "history_start": "2021-12-31",
+        "history_end": "2022-12-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.018703890053830996,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1380.2773054956347,
+        "min_eigenvalue": 8.332994049496058e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-02-01",
+        "history_start": "2022-01-31",
+        "history_end": "2023-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02689944154718118,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1363.9278454583928,
+        "min_eigenvalue": 8.453542978612619e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-03-01",
+        "history_start": "2022-02-28",
+        "history_end": "2023-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.014376519141916882,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1281.5774477084183,
+        "min_eigenvalue": 8.633176221772457e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-04-03",
+        "history_start": "2022-03-31",
+        "history_end": "2023-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01916682713575646,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1344.702617448238,
+        "min_eigenvalue": 8.13550371419186e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-05-01",
+        "history_start": "2022-04-28",
+        "history_end": "2023-04-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.015365273253835472,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1265.0027421275377,
+        "min_eigenvalue": 8.37827459054243e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-06-01",
+        "history_start": "2022-05-31",
+        "history_end": "2023-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.022422584674802723,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1237.108039961147,
+        "min_eigenvalue": 7.423756179717828e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-07-03",
+        "history_start": "2022-06-30",
+        "history_end": "2023-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02226920853380277,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1102.0372438164438,
+        "min_eigenvalue": 7.281439930766859e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-08-01",
+        "history_start": "2022-07-29",
+        "history_end": "2023-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.010368278574164176,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1083.1973797046805,
+        "min_eigenvalue": 7.004452277960204e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-09-01",
+        "history_start": "2022-08-31",
+        "history_end": "2023-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.014094056419986442,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 1024.332012588312,
+        "min_eigenvalue": 6.934938141733234e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-10-02",
+        "history_start": "2022-09-29",
+        "history_end": "2023-09-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.015326409509347121,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 954.7860764184704,
+        "min_eigenvalue": 6.693523307498303e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-11-01",
+        "history_start": "2022-10-31",
+        "history_end": "2023-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.021470176087760945,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 844.3565041497193,
+        "min_eigenvalue": 6.5591306916856e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-12-01",
+        "history_start": "2022-11-30",
+        "history_end": "2023-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.014944518741678679,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 699.6849702579572,
+        "min_eigenvalue": 6.865129368950738e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-01-02",
+        "history_start": "2022-12-29",
+        "history_end": "2023-12-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.0163911209278969,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 692.465256755,
+        "min_eigenvalue": 6.622903748883417e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-02-01",
+        "history_start": "2023-01-31",
+        "history_end": "2024-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.018829444998049755,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 632.3548683126885,
+        "min_eigenvalue": 6.875484676203689e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-03-01",
+        "history_start": "2023-03-01",
+        "history_end": "2024-02-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.015685228759460292,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 638.1823828056016,
+        "min_eigenvalue": 6.7006100409454055e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-04-01",
+        "history_start": "2023-03-29",
+        "history_end": "2024-03-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.014809548086921233,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 535.6226307886247,
+        "min_eigenvalue": 6.953707364107206e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-05-01",
+        "history_start": "2023-05-01",
+        "history_end": "2024-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.017862284004949297,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 549.2770117001514,
+        "min_eigenvalue": 6.635712559841457e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-06-03",
+        "history_start": "2023-06-01",
+        "history_end": "2024-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01313850116776289,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 478.3037789170633,
+        "min_eigenvalue": 7.3044837098188185e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-07-01",
+        "history_start": "2023-06-29",
+        "history_end": "2024-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.01798086885535729,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 457.51318813425155,
+        "min_eigenvalue": 7.183157817478033e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-08-01",
+        "history_start": "2023-08-01",
+        "history_end": "2024-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.022910288854071044,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 515.7661119609052,
+        "min_eigenvalue": 6.763609862491176e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-09-03",
+        "history_start": "2023-08-31",
+        "history_end": "2024-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.016268651015382246,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 500.75505421171835,
+        "min_eigenvalue": 7.942084546743021e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-10-01",
+        "history_start": "2023-09-29",
+        "history_end": "2024-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.012259567003264162,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 540.5622947454993,
+        "min_eigenvalue": 7.506124896942539e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-11-01",
+        "history_start": "2023-11-01",
+        "history_end": "2024-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01678369565625553,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 505.38555474369025,
+        "min_eigenvalue": 7.4735369534072714e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-12-02",
+        "history_start": "2023-11-30",
+        "history_end": "2024-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.021529392222598764,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 456.19350064966915,
+        "min_eigenvalue": 8.174161413819485e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-01-02",
+        "history_start": "2024-01-02",
+        "history_end": "2024-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.019447246229005698,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 427.7766212865608,
+        "min_eigenvalue": 8.635445641813947e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-02-03",
+        "history_start": "2024-01-31",
+        "history_end": "2025-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.017550626321167332,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 424.5737788553007,
+        "min_eigenvalue": 8.888902999249448e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-03-03",
+        "history_start": "2024-02-28",
+        "history_end": "2025-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.02684241498948107,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 419.09531281852753,
+        "min_eigenvalue": 8.84585234888125e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-04-01",
+        "history_start": "2024-03-28",
+        "history_end": "2025-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02281534097228912,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 458.14944127905005,
+        "min_eigenvalue": 9.179712280459493e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-05-01",
+        "history_start": "2024-04-29",
+        "history_end": "2025-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01790303621270007,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 754.0884046794498,
+        "min_eigenvalue": 9.636504265886235e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-06-02",
+        "history_start": "2024-05-29",
+        "history_end": "2025-05-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.018929014038511535,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 774.0724780051409,
+        "min_eigenvalue": 9.72994441780355e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-07-01",
+        "history_start": "2024-06-27",
+        "history_end": "2025-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.016999972916556954,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 803.2791569797893,
+        "min_eigenvalue": 9.43124058702112e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-08-01",
+        "history_start": "2024-07-30",
+        "history_end": "2025-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02183966634809726,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 787.4297862441994,
+        "min_eigenvalue": 9.440912132426248e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-09-02",
+        "history_start": "2024-08-28",
+        "history_end": "2025-08-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.014421742563703393,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 779.7811483620807,
+        "min_eigenvalue": 8.932125374975298e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-10-01",
+        "history_start": "2024-09-27",
+        "history_end": "2025-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02280114884432584,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 728.336875624821,
+        "min_eigenvalue": 9.278951718690417e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-11-03",
+        "history_start": "2024-10-30",
+        "history_end": "2025-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02332731906741013,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 781.6322738071132,
+        "min_eigenvalue": 8.839871507291998e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-12-01",
+        "history_start": "2024-11-26",
+        "history_end": "2025-11-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.01770141679972102,
+        "max_weight": 0.020833333333333332,
+        "covariance_condition": 761.9925990899233,
+        "min_eigenvalue": 8.957387911309119e-06,
+        "shrinkage": null
+      }
+    ],
+    "inverse_vol": [
+      {
+        "date": "2019-01-02",
+        "history_start": "2017-12-29",
+        "history_end": "2018-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.07852326098120375,
+        "max_weight": 0.030466111459979642,
+        "covariance_condition": 1001.7840908551946,
+        "min_eigenvalue": 5.0734462138788435e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-02-01",
+        "history_start": "2018-01-31",
+        "history_end": "2019-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.016168217719704035,
+        "max_weight": 0.03053683781311235,
+        "covariance_condition": 955.9671246963715,
+        "min_eigenvalue": 5.79143104917593e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-03-01",
+        "history_start": "2018-02-28",
+        "history_end": "2019-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.014172613830550095,
+        "max_weight": 0.0317017254915876,
+        "covariance_condition": 801.3495996869098,
+        "min_eigenvalue": 6.062159988859244e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-04-01",
+        "history_start": "2018-03-29",
+        "history_end": "2019-03-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.015130793521112035,
+        "max_weight": 0.03191604348677731,
+        "covariance_condition": 753.1295823730372,
+        "min_eigenvalue": 6.197450786275676e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-05-01",
+        "history_start": "2018-04-30",
+        "history_end": "2019-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.015097211067515189,
+        "max_weight": 0.03162156684605518,
+        "covariance_condition": 697.5333100452566,
+        "min_eigenvalue": 6.2743642728902465e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-06-03",
+        "history_start": "2018-05-31",
+        "history_end": "2019-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01657470501928965,
+        "max_weight": 0.0318043511609927,
+        "covariance_condition": 737.5146522868226,
+        "min_eigenvalue": 6.347076632228807e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-07-01",
+        "history_start": "2018-06-28",
+        "history_end": "2019-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.015507541099442862,
+        "max_weight": 0.031962252471310786,
+        "covariance_condition": 747.9589179583794,
+        "min_eigenvalue": 6.418677184498757e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-08-01",
+        "history_start": "2018-07-31",
+        "history_end": "2019-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01494641457470519,
+        "max_weight": 0.03274770446240126,
+        "covariance_condition": 748.6399801391417,
+        "min_eigenvalue": 6.4665473537025045e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-09-03",
+        "history_start": "2018-08-30",
+        "history_end": "2019-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01905163407218964,
+        "max_weight": 0.03341290936869891,
+        "covariance_condition": 895.2650294746302,
+        "min_eigenvalue": 6.231932017525489e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-10-01",
+        "history_start": "2018-09-28",
+        "history_end": "2019-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01414803165009229,
+        "max_weight": 0.03424444152430734,
+        "covariance_condition": 933.6824884569131,
+        "min_eigenvalue": 6.153766332640883e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-11-01",
+        "history_start": "2018-10-31",
+        "history_end": "2019-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.016049912379953,
+        "max_weight": 0.0341200719000188,
+        "covariance_condition": 799.9425380361203,
+        "min_eigenvalue": 6.5314098035315334e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-12-02",
+        "history_start": "2018-11-29",
+        "history_end": "2019-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.01311448015846636,
+        "max_weight": 0.0333563652665725,
+        "covariance_condition": 755.0488247618061,
+        "min_eigenvalue": 6.309265971707607e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-01-02",
+        "history_start": "2019-01-02",
+        "history_end": "2019-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.018662803980823695,
+        "max_weight": 0.03448410456500088,
+        "covariance_condition": 630.7011452087208,
+        "min_eigenvalue": 5.8047297815023075e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-02-03",
+        "history_start": "2019-02-01",
+        "history_end": "2020-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.017558750903254476,
+        "max_weight": 0.03546027222521431,
+        "covariance_condition": 631.5693952747395,
+        "min_eigenvalue": 5.290652504421238e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-03-02",
+        "history_start": "2019-03-01",
+        "history_end": "2020-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.01922930964611816,
+        "max_weight": 0.0320317410945869,
+        "covariance_condition": 678.5540378269102,
+        "min_eigenvalue": 5.9684520996087555e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-04-01",
+        "history_start": "2019-04-02",
+        "history_end": "2020-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.064787451819072,
+        "max_weight": 0.029095666098644817,
+        "covariance_condition": 2641.1066357551153,
+        "min_eigenvalue": 7.001769163403882e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-05-01",
+        "history_start": "2019-05-02",
+        "history_end": "2020-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.024628262712921248,
+        "max_weight": 0.03040812147093108,
+        "covariance_condition": 2652.1660643347236,
+        "min_eigenvalue": 8.303135662831448e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-06-01",
+        "history_start": "2019-05-31",
+        "history_end": "2020-05-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.016207886973672803,
+        "max_weight": 0.03091247859390074,
+        "covariance_condition": 2558.944225357362,
+        "min_eigenvalue": 9.199250719055571e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-07-01",
+        "history_start": "2019-07-02",
+        "history_end": "2020-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.016839088257076276,
+        "max_weight": 0.030982574309426355,
+        "covariance_condition": 2635.3019356288446,
+        "min_eigenvalue": 9.658639826451344e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-08-03",
+        "history_start": "2019-08-02",
+        "history_end": "2020-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.018911464845668365,
+        "max_weight": 0.031023041149991232,
+        "covariance_condition": 2446.017018283612,
+        "min_eigenvalue": 1.056260400833124e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-09-01",
+        "history_start": "2019-09-03",
+        "history_end": "2020-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.020859619632250706,
+        "max_weight": 0.03115018481620344,
+        "covariance_condition": 2410.5932995880125,
+        "min_eigenvalue": 1.0452846642006674e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-10-01",
+        "history_start": "2019-10-02",
+        "history_end": "2020-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.012970616011216698,
+        "max_weight": 0.030943844452699525,
+        "covariance_condition": 2300.5790068487354,
+        "min_eigenvalue": 1.1200103494450663e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-11-02",
+        "history_start": "2019-11-01",
+        "history_end": "2020-10-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01638393498198739,
+        "max_weight": 0.03096749323963955,
+        "covariance_condition": 2152.4447086533078,
+        "min_eigenvalue": 1.2129158465251468e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-12-01",
+        "history_start": "2019-12-02",
+        "history_end": "2020-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02480102934585596,
+        "max_weight": 0.031206412188572678,
+        "covariance_condition": 2165.8726540661196,
+        "min_eigenvalue": 1.23935253127434e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-01-04",
+        "history_start": "2020-01-03",
+        "history_end": "2020-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.016798469028605104,
+        "max_weight": 0.031252508585787174,
+        "covariance_condition": 2171.0984242956365,
+        "min_eigenvalue": 1.2399021946101186e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-02-01",
+        "history_start": "2020-01-31",
+        "history_end": "2021-01-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.017059862051023382,
+        "max_weight": 0.031355794141808724,
+        "covariance_condition": 2165.968159624307,
+        "min_eigenvalue": 1.2608129285680708e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-03-01",
+        "history_start": "2020-02-28",
+        "history_end": "2021-02-26",
+        "history_rows": 252,
+        "one_way_turnover": 0.025894020681380178,
+        "max_weight": 0.031360651060080035,
+        "covariance_condition": 2045.7620200516615,
+        "min_eigenvalue": 1.3100254048279024e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-04-01",
+        "history_start": "2020-04-01",
+        "history_end": "2021-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.03397921813763345,
+        "max_weight": 0.03604106126538481,
+        "covariance_condition": 1084.542702228875,
+        "min_eigenvalue": 1.16827335781618e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-05-03",
+        "history_start": "2020-05-01",
+        "history_end": "2021-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01932338791469977,
+        "max_weight": 0.03565917021591086,
+        "covariance_condition": 1020.4108765468696,
+        "min_eigenvalue": 9.17540678058831e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-06-01",
+        "history_start": "2020-06-01",
+        "history_end": "2021-05-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.018908869205679368,
+        "max_weight": 0.035896867380393584,
+        "covariance_condition": 876.6991899176707,
+        "min_eigenvalue": 8.86235982240041e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-07-01",
+        "history_start": "2020-07-01",
+        "history_end": "2021-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02421993547058736,
+        "max_weight": 0.03566146321747248,
+        "covariance_condition": 686.8173835379413,
+        "min_eigenvalue": 8.42641687586808e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-08-02",
+        "history_start": "2020-07-31",
+        "history_end": "2021-07-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.015317220785391526,
+        "max_weight": 0.03493665779880829,
+        "covariance_condition": 744.6145208864928,
+        "min_eigenvalue": 7.650371814369488e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-09-01",
+        "history_start": "2020-09-01",
+        "history_end": "2021-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.012803660685639661,
+        "max_weight": 0.03481449464586491,
+        "covariance_condition": 895.8853194000649,
+        "min_eigenvalue": 6.475457805682905e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-10-01",
+        "history_start": "2020-10-01",
+        "history_end": "2021-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.016700080102046117,
+        "max_weight": 0.03464847859270328,
+        "covariance_condition": 864.0827941238284,
+        "min_eigenvalue": 6.1735989854522145e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-11-01",
+        "history_start": "2020-10-30",
+        "history_end": "2021-10-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.018747586762809902,
+        "max_weight": 0.034768437642566305,
+        "covariance_condition": 814.28576767592,
+        "min_eigenvalue": 6.099251570410945e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-12-01",
+        "history_start": "2020-12-01",
+        "history_end": "2021-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02582744348156811,
+        "max_weight": 0.0339428283838067,
+        "covariance_condition": 728.4478515623318,
+        "min_eigenvalue": 6.159169763795383e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-01-03",
+        "history_start": "2021-01-04",
+        "history_end": "2021-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.017364762619167015,
+        "max_weight": 0.03341354761682963,
+        "covariance_condition": 790.7885277494621,
+        "min_eigenvalue": 6.096248961795119e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-02-01",
+        "history_start": "2021-02-02",
+        "history_end": "2022-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.022025413070610046,
+        "max_weight": 0.03351838793569063,
+        "covariance_condition": 690.0322112558758,
+        "min_eigenvalue": 6.899645139778034e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-03-01",
+        "history_start": "2021-03-02",
+        "history_end": "2022-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.020239983940162028,
+        "max_weight": 0.03313150334287125,
+        "covariance_condition": 732.764515247818,
+        "min_eigenvalue": 6.564625394154106e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-04-01",
+        "history_start": "2021-04-05",
+        "history_end": "2022-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.022395369382266207,
+        "max_weight": 0.03394772676059396,
+        "covariance_condition": 744.1515927215734,
+        "min_eigenvalue": 6.777857680672681e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-05-02",
+        "history_start": "2021-05-03",
+        "history_end": "2022-04-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.023900934957376316,
+        "max_weight": 0.03364844999313373,
+        "covariance_condition": 799.473406728984,
+        "min_eigenvalue": 6.958605042532775e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-06-01",
+        "history_start": "2021-06-02",
+        "history_end": "2022-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.016221923194433392,
+        "max_weight": 0.0329339281235146,
+        "covariance_condition": 984.4340500823898,
+        "min_eigenvalue": 6.870232762715144e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-07-01",
+        "history_start": "2021-07-01",
+        "history_end": "2022-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02040137448004938,
+        "max_weight": 0.03227933386871472,
+        "covariance_condition": 1062.4227780087535,
+        "min_eigenvalue": 7.5945855109123005e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-08-01",
+        "history_start": "2021-07-30",
+        "history_end": "2022-07-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.023520701837206646,
+        "max_weight": 0.032676949877376314,
+        "covariance_condition": 946.8986847214311,
+        "min_eigenvalue": 8.818980707953725e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-09-01",
+        "history_start": "2021-09-01",
+        "history_end": "2022-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01104063879642453,
+        "max_weight": 0.03351019190787559,
+        "covariance_condition": 999.6377032841899,
+        "min_eigenvalue": 8.810469592734366e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-10-03",
+        "history_start": "2021-10-01",
+        "history_end": "2022-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.015812978866155,
+        "max_weight": 0.033570676473805953,
+        "covariance_condition": 1101.382358290404,
+        "min_eigenvalue": 8.65570164347932e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-11-01",
+        "history_start": "2021-11-01",
+        "history_end": "2022-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.018782662753347328,
+        "max_weight": 0.033293996225439514,
+        "covariance_condition": 1242.4309269218436,
+        "min_eigenvalue": 8.468802245480482e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-12-01",
+        "history_start": "2021-12-01",
+        "history_end": "2022-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02134546338514415,
+        "max_weight": 0.03430346586101523,
+        "covariance_condition": 1402.0035062998052,
+        "min_eigenvalue": 8.232574910853814e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-01-03",
+        "history_start": "2021-12-31",
+        "history_end": "2022-12-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.017016571563942408,
+        "max_weight": 0.034311212805304324,
+        "covariance_condition": 1380.2773054956347,
+        "min_eigenvalue": 8.332994049496058e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-02-01",
+        "history_start": "2022-01-31",
+        "history_end": "2023-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.025883445020550944,
+        "max_weight": 0.03341720663210126,
+        "covariance_condition": 1363.9278454583928,
+        "min_eigenvalue": 8.453542978612619e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-03-01",
+        "history_start": "2022-02-28",
+        "history_end": "2023-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.012052329526388548,
+        "max_weight": 0.03351447924489571,
+        "covariance_condition": 1281.5774477084183,
+        "min_eigenvalue": 8.633176221772457e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-04-03",
+        "history_start": "2022-03-31",
+        "history_end": "2023-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.018428310295580983,
+        "max_weight": 0.03325895831031722,
+        "covariance_condition": 1344.702617448238,
+        "min_eigenvalue": 8.13550371419186e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-05-01",
+        "history_start": "2022-04-28",
+        "history_end": "2023-04-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.015338885749267001,
+        "max_weight": 0.033563376337570464,
+        "covariance_condition": 1265.0027421275377,
+        "min_eigenvalue": 8.37827459054243e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-06-01",
+        "history_start": "2022-05-31",
+        "history_end": "2023-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.021050512761627414,
+        "max_weight": 0.03580492285682872,
+        "covariance_condition": 1237.108039961147,
+        "min_eigenvalue": 7.423756179717828e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-07-03",
+        "history_start": "2022-06-30",
+        "history_end": "2023-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.021606062687804704,
+        "max_weight": 0.03555729348503555,
+        "covariance_condition": 1102.0372438164438,
+        "min_eigenvalue": 7.281439930766859e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-08-01",
+        "history_start": "2022-07-29",
+        "history_end": "2023-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.011912585756521243,
+        "max_weight": 0.03503704387812435,
+        "covariance_condition": 1083.1973797046805,
+        "min_eigenvalue": 7.004452277960204e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-09-01",
+        "history_start": "2022-08-31",
+        "history_end": "2023-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.013305316821216967,
+        "max_weight": 0.034302892287292525,
+        "covariance_condition": 1024.332012588312,
+        "min_eigenvalue": 6.934938141733234e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-10-02",
+        "history_start": "2022-09-29",
+        "history_end": "2023-09-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.013373704101255393,
+        "max_weight": 0.03438054806059373,
+        "covariance_condition": 954.7860764184704,
+        "min_eigenvalue": 6.693523307498303e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-11-01",
+        "history_start": "2022-10-31",
+        "history_end": "2023-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02017539968900887,
+        "max_weight": 0.03319029947554806,
+        "covariance_condition": 844.3565041497193,
+        "min_eigenvalue": 6.5591306916856e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-12-01",
+        "history_start": "2022-11-30",
+        "history_end": "2023-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.014817044603908334,
+        "max_weight": 0.03208326037265004,
+        "covariance_condition": 699.6849702579572,
+        "min_eigenvalue": 6.865129368950738e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-01-02",
+        "history_start": "2022-12-29",
+        "history_end": "2023-12-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.020896552689483414,
+        "max_weight": 0.03191139045989799,
+        "covariance_condition": 692.465256755,
+        "min_eigenvalue": 6.622903748883417e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-02-01",
+        "history_start": "2023-01-31",
+        "history_end": "2024-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.015143201092849964,
+        "max_weight": 0.03258987259163423,
+        "covariance_condition": 632.3548683126885,
+        "min_eigenvalue": 6.875484676203689e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-03-01",
+        "history_start": "2023-03-01",
+        "history_end": "2024-02-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.0162693305265627,
+        "max_weight": 0.03284186061572892,
+        "covariance_condition": 638.1823828056016,
+        "min_eigenvalue": 6.7006100409454055e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-04-01",
+        "history_start": "2023-03-29",
+        "history_end": "2024-03-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.017817279396047152,
+        "max_weight": 0.03426335478804298,
+        "covariance_condition": 535.6226307886247,
+        "min_eigenvalue": 6.953707364107206e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-05-01",
+        "history_start": "2023-05-01",
+        "history_end": "2024-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02000822218660287,
+        "max_weight": 0.034097222115280025,
+        "covariance_condition": 549.2770117001514,
+        "min_eigenvalue": 6.635712559841457e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-06-03",
+        "history_start": "2023-06-01",
+        "history_end": "2024-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.012778855137470537,
+        "max_weight": 0.03411157967485841,
+        "covariance_condition": 478.3037789170633,
+        "min_eigenvalue": 7.3044837098188185e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-07-01",
+        "history_start": "2023-06-29",
+        "history_end": "2024-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.016890517863089944,
+        "max_weight": 0.03409392448525714,
+        "covariance_condition": 457.51318813425155,
+        "min_eigenvalue": 7.183157817478033e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-08-01",
+        "history_start": "2023-08-01",
+        "history_end": "2024-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02475012426341309,
+        "max_weight": 0.033915358394783365,
+        "covariance_condition": 515.7661119609052,
+        "min_eigenvalue": 6.763609862491176e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-09-03",
+        "history_start": "2023-08-31",
+        "history_end": "2024-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.014697149710738842,
+        "max_weight": 0.03372106362135772,
+        "covariance_condition": 500.75505421171835,
+        "min_eigenvalue": 7.942084546743021e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-10-01",
+        "history_start": "2023-09-29",
+        "history_end": "2024-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.012318171615140835,
+        "max_weight": 0.033239006726342314,
+        "covariance_condition": 540.5622947454993,
+        "min_eigenvalue": 7.506124896942539e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-11-01",
+        "history_start": "2023-11-01",
+        "history_end": "2024-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0215055927822543,
+        "max_weight": 0.03287142766535481,
+        "covariance_condition": 505.38555474369025,
+        "min_eigenvalue": 7.4735369534072714e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-12-02",
+        "history_start": "2023-11-30",
+        "history_end": "2024-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.030091363546251797,
+        "max_weight": 0.031125792613581768,
+        "covariance_condition": 456.19350064966915,
+        "min_eigenvalue": 8.174161413819485e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-01-02",
+        "history_start": "2024-01-02",
+        "history_end": "2024-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.02007479857004321,
+        "max_weight": 0.030739754516287052,
+        "covariance_condition": 427.7766212865608,
+        "min_eigenvalue": 8.635445641813947e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-02-03",
+        "history_start": "2024-01-31",
+        "history_end": "2025-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.017141842181024543,
+        "max_weight": 0.030197935292983643,
+        "covariance_condition": 424.5737788553007,
+        "min_eigenvalue": 8.888902999249448e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-03-03",
+        "history_start": "2024-02-28",
+        "history_end": "2025-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.029247860184737025,
+        "max_weight": 0.03007623254393114,
+        "covariance_condition": 419.09531281852753,
+        "min_eigenvalue": 8.84585234888125e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-04-01",
+        "history_start": "2024-03-28",
+        "history_end": "2025-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.01919095032443898,
+        "max_weight": 0.030871736016930558,
+        "covariance_condition": 458.14944127905005,
+        "min_eigenvalue": 9.179712280459493e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-05-01",
+        "history_start": "2024-04-29",
+        "history_end": "2025-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02772455948254151,
+        "max_weight": 0.03148420965955374,
+        "covariance_condition": 754.0884046794498,
+        "min_eigenvalue": 9.636504265886235e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-06-02",
+        "history_start": "2024-05-29",
+        "history_end": "2025-05-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01789944340174946,
+        "max_weight": 0.031376415102618335,
+        "covariance_condition": 774.0724780051409,
+        "min_eigenvalue": 9.72994441780355e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-07-01",
+        "history_start": "2024-06-27",
+        "history_end": "2025-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.017043953185186204,
+        "max_weight": 0.031809455199325765,
+        "covariance_condition": 803.2791569797893,
+        "min_eigenvalue": 9.43124058702112e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-08-01",
+        "history_start": "2024-07-30",
+        "history_end": "2025-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.020380911353115348,
+        "max_weight": 0.030726637235261603,
+        "covariance_condition": 787.4297862441994,
+        "min_eigenvalue": 9.440912132426248e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-09-02",
+        "history_start": "2024-08-28",
+        "history_end": "2025-08-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.0163247849748891,
+        "max_weight": 0.030417741427173958,
+        "covariance_condition": 779.7811483620807,
+        "min_eigenvalue": 8.932125374975298e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-10-01",
+        "history_start": "2024-09-27",
+        "history_end": "2025-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.01823329194596137,
+        "max_weight": 0.030262630816397507,
+        "covariance_condition": 728.336875624821,
+        "min_eigenvalue": 9.278951718690417e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-11-03",
+        "history_start": "2024-10-30",
+        "history_end": "2025-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.023803866259110656,
+        "max_weight": 0.03075507977922749,
+        "covariance_condition": 781.6322738071132,
+        "min_eigenvalue": 8.839871507291998e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-12-01",
+        "history_start": "2024-11-26",
+        "history_end": "2025-11-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.01994210149841181,
+        "max_weight": 0.032690384475371335,
+        "covariance_condition": 761.9925990899233,
+        "min_eigenvalue": 8.957387911309119e-06,
+        "shrinkage": null
+      }
+    ],
+    "sample": [
+      {
+        "date": "2019-01-02",
+        "history_start": "2017-12-29",
+        "history_end": "2018-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.7512123771650372,
+        "max_weight": 0.15,
+        "covariance_condition": 1001.7840908551946,
+        "min_eigenvalue": 5.0734462138788435e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-02-01",
+        "history_start": "2018-01-31",
+        "history_end": "2019-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1078144374308991,
+        "max_weight": 0.15,
+        "covariance_condition": 955.9671246963715,
+        "min_eigenvalue": 5.79143104917593e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-03-01",
+        "history_start": "2018-02-28",
+        "history_end": "2019-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.09208405497370231,
+        "max_weight": 0.15,
+        "covariance_condition": 801.3495996869098,
+        "min_eigenvalue": 6.062159988859244e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-04-01",
+        "history_start": "2018-03-29",
+        "history_end": "2019-03-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.07565229996806663,
+        "max_weight": 0.15,
+        "covariance_condition": 753.1295823730372,
+        "min_eigenvalue": 6.197450786275676e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-05-01",
+        "history_start": "2018-04-30",
+        "history_end": "2019-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06023239753223455,
+        "max_weight": 0.15,
+        "covariance_condition": 697.5333100452566,
+        "min_eigenvalue": 6.2743642728902465e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-06-03",
+        "history_start": "2018-05-31",
+        "history_end": "2019-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.06542262072577174,
+        "max_weight": 0.15,
+        "covariance_condition": 737.5146522868226,
+        "min_eigenvalue": 6.347076632228807e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-07-01",
+        "history_start": "2018-06-28",
+        "history_end": "2019-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.09209582511867687,
+        "max_weight": 0.15,
+        "covariance_condition": 747.9589179583794,
+        "min_eigenvalue": 6.418677184498757e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-08-01",
+        "history_start": "2018-07-31",
+        "history_end": "2019-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.09219637190064187,
+        "max_weight": 0.15,
+        "covariance_condition": 748.6399801391417,
+        "min_eigenvalue": 6.4665473537025045e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-09-03",
+        "history_start": "2018-08-30",
+        "history_end": "2019-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1071696098095391,
+        "max_weight": 0.15,
+        "covariance_condition": 895.2650294746302,
+        "min_eigenvalue": 6.231932017525489e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-10-01",
+        "history_start": "2018-09-28",
+        "history_end": "2019-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.05130650446155045,
+        "max_weight": 0.15,
+        "covariance_condition": 933.6824884569131,
+        "min_eigenvalue": 6.153766332640883e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-11-01",
+        "history_start": "2018-10-31",
+        "history_end": "2019-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.10313695449419849,
+        "max_weight": 0.15,
+        "covariance_condition": 799.9425380361203,
+        "min_eigenvalue": 6.5314098035315334e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-12-02",
+        "history_start": "2018-11-29",
+        "history_end": "2019-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.08329744015787016,
+        "max_weight": 0.15,
+        "covariance_condition": 755.0488247618061,
+        "min_eigenvalue": 6.309265971707607e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-01-02",
+        "history_start": "2019-01-02",
+        "history_end": "2019-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.12331587866973626,
+        "max_weight": 0.15,
+        "covariance_condition": 630.7011452087208,
+        "min_eigenvalue": 5.8047297815023075e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-02-03",
+        "history_start": "2019-02-01",
+        "history_end": "2020-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.18321941115090928,
+        "max_weight": 0.15,
+        "covariance_condition": 631.5693952747395,
+        "min_eigenvalue": 5.290652504421238e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-03-02",
+        "history_start": "2019-03-01",
+        "history_end": "2020-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.12327630795628286,
+        "max_weight": 0.15,
+        "covariance_condition": 678.5540378269102,
+        "min_eigenvalue": 5.9684520996087555e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-04-01",
+        "history_start": "2019-04-02",
+        "history_end": "2020-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.41798325390892577,
+        "max_weight": 0.15,
+        "covariance_condition": 2641.1066357551153,
+        "min_eigenvalue": 7.001769163403882e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-05-01",
+        "history_start": "2019-05-02",
+        "history_end": "2020-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.11356559130884858,
+        "max_weight": 0.15,
+        "covariance_condition": 2652.1660643347236,
+        "min_eigenvalue": 8.303135662831448e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-06-01",
+        "history_start": "2019-05-31",
+        "history_end": "2020-05-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.058928884398774715,
+        "max_weight": 0.15,
+        "covariance_condition": 2558.944225357362,
+        "min_eigenvalue": 9.199250719055571e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-07-01",
+        "history_start": "2019-07-02",
+        "history_end": "2020-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.08552898818298235,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 2635.3019356288446,
+        "min_eigenvalue": 9.658639826451344e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-08-03",
+        "history_start": "2019-08-02",
+        "history_end": "2020-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.041136707459628705,
+        "max_weight": 0.15,
+        "covariance_condition": 2446.017018283612,
+        "min_eigenvalue": 1.056260400833124e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-09-01",
+        "history_start": "2019-09-03",
+        "history_end": "2020-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.05406928895804318,
+        "max_weight": 0.15,
+        "covariance_condition": 2410.5932995880125,
+        "min_eigenvalue": 1.0452846642006674e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-10-01",
+        "history_start": "2019-10-02",
+        "history_end": "2020-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.05776767252440451,
+        "max_weight": 0.15,
+        "covariance_condition": 2300.5790068487354,
+        "min_eigenvalue": 1.1200103494450663e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-11-02",
+        "history_start": "2019-11-01",
+        "history_end": "2020-10-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.031659925156953754,
+        "max_weight": 0.15,
+        "covariance_condition": 2152.4447086533078,
+        "min_eigenvalue": 1.2129158465251468e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-12-01",
+        "history_start": "2019-12-02",
+        "history_end": "2020-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.04688919735664189,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 2165.8726540661196,
+        "min_eigenvalue": 1.23935253127434e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-01-04",
+        "history_start": "2020-01-03",
+        "history_end": "2020-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0145419523004503,
+        "max_weight": 0.15,
+        "covariance_condition": 2171.0984242956365,
+        "min_eigenvalue": 1.2399021946101186e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-02-01",
+        "history_start": "2020-01-31",
+        "history_end": "2021-01-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.051224288388584206,
+        "max_weight": 0.15,
+        "covariance_condition": 2165.968159624307,
+        "min_eigenvalue": 1.2608129285680708e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-03-01",
+        "history_start": "2020-02-28",
+        "history_end": "2021-02-26",
+        "history_rows": 252,
+        "one_way_turnover": 0.03412414570185432,
+        "max_weight": 0.15,
+        "covariance_condition": 2045.7620200516615,
+        "min_eigenvalue": 1.3100254048279024e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-04-01",
+        "history_start": "2020-04-01",
+        "history_end": "2021-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.21830519726215059,
+        "max_weight": 0.15,
+        "covariance_condition": 1084.542702228875,
+        "min_eigenvalue": 1.16827335781618e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-05-03",
+        "history_start": "2020-05-01",
+        "history_end": "2021-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.15363308835248884,
+        "max_weight": 0.14999999999999986,
+        "covariance_condition": 1020.4108765468696,
+        "min_eigenvalue": 9.17540678058831e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-06-01",
+        "history_start": "2020-06-01",
+        "history_end": "2021-05-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.15639372385734185,
+        "max_weight": 0.15,
+        "covariance_condition": 876.6991899176707,
+        "min_eigenvalue": 8.86235982240041e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-07-01",
+        "history_start": "2020-07-01",
+        "history_end": "2021-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.14095466235622534,
+        "max_weight": 0.15,
+        "covariance_condition": 686.8173835379413,
+        "min_eigenvalue": 8.42641687586808e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-08-02",
+        "history_start": "2020-07-31",
+        "history_end": "2021-07-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06598795364696389,
+        "max_weight": 0.15,
+        "covariance_condition": 744.6145208864928,
+        "min_eigenvalue": 7.650371814369488e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-09-01",
+        "history_start": "2020-09-01",
+        "history_end": "2021-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.04168253131563785,
+        "max_weight": 0.15,
+        "covariance_condition": 895.8853194000649,
+        "min_eigenvalue": 6.475457805682905e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-10-01",
+        "history_start": "2020-10-01",
+        "history_end": "2021-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1944230860516878,
+        "max_weight": 0.15,
+        "covariance_condition": 864.0827941238284,
+        "min_eigenvalue": 6.1735989854522145e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-11-01",
+        "history_start": "2020-10-30",
+        "history_end": "2021-10-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.12350738098303946,
+        "max_weight": 0.15,
+        "covariance_condition": 814.28576767592,
+        "min_eigenvalue": 6.099251570410945e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-12-01",
+        "history_start": "2020-12-01",
+        "history_end": "2021-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.08013548672127667,
+        "max_weight": 0.15,
+        "covariance_condition": 728.4478515623318,
+        "min_eigenvalue": 6.159169763795383e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-01-03",
+        "history_start": "2021-01-04",
+        "history_end": "2021-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0710907770072433,
+        "max_weight": 0.15,
+        "covariance_condition": 790.7885277494621,
+        "min_eigenvalue": 6.096248961795119e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-02-01",
+        "history_start": "2021-02-02",
+        "history_end": "2022-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.16535039603615567,
+        "max_weight": 0.15,
+        "covariance_condition": 690.0322112558758,
+        "min_eigenvalue": 6.899645139778034e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-03-01",
+        "history_start": "2021-03-02",
+        "history_end": "2022-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.18936018851731973,
+        "max_weight": 0.15,
+        "covariance_condition": 732.764515247818,
+        "min_eigenvalue": 6.564625394154106e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-04-01",
+        "history_start": "2021-04-05",
+        "history_end": "2022-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.13693539664725768,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 744.1515927215734,
+        "min_eigenvalue": 6.777857680672681e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-05-02",
+        "history_start": "2021-05-03",
+        "history_end": "2022-04-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.15201866272048264,
+        "max_weight": 0.15,
+        "covariance_condition": 799.473406728984,
+        "min_eigenvalue": 6.958605042532775e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-06-01",
+        "history_start": "2021-06-02",
+        "history_end": "2022-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.20701415934822223,
+        "max_weight": 0.15,
+        "covariance_condition": 984.4340500823898,
+        "min_eigenvalue": 6.870232762715144e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-07-01",
+        "history_start": "2021-07-01",
+        "history_end": "2022-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.12886354672769132,
+        "max_weight": 0.15,
+        "covariance_condition": 1062.4227780087535,
+        "min_eigenvalue": 7.5945855109123005e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-08-01",
+        "history_start": "2021-07-30",
+        "history_end": "2022-07-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.04801408516700349,
+        "max_weight": 0.15,
+        "covariance_condition": 946.8986847214311,
+        "min_eigenvalue": 8.818980707953725e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-09-01",
+        "history_start": "2021-09-01",
+        "history_end": "2022-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.08898699573212146,
+        "max_weight": 0.15,
+        "covariance_condition": 999.6377032841899,
+        "min_eigenvalue": 8.810469592734366e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-10-03",
+        "history_start": "2021-10-01",
+        "history_end": "2022-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.12223937185213064,
+        "max_weight": 0.15,
+        "covariance_condition": 1101.382358290404,
+        "min_eigenvalue": 8.65570164347932e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-11-01",
+        "history_start": "2021-11-01",
+        "history_end": "2022-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.06292437081279642,
+        "max_weight": 0.15,
+        "covariance_condition": 1242.4309269218436,
+        "min_eigenvalue": 8.468802245480482e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-12-01",
+        "history_start": "2021-12-01",
+        "history_end": "2022-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.05941269758311322,
+        "max_weight": 0.15,
+        "covariance_condition": 1402.0035062998052,
+        "min_eigenvalue": 8.232574910853814e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-01-03",
+        "history_start": "2021-12-31",
+        "history_end": "2022-12-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.021948347238829255,
+        "max_weight": 0.15,
+        "covariance_condition": 1380.2773054956347,
+        "min_eigenvalue": 8.332994049496058e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-02-01",
+        "history_start": "2022-01-31",
+        "history_end": "2023-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0562185227513438,
+        "max_weight": 0.15,
+        "covariance_condition": 1363.9278454583928,
+        "min_eigenvalue": 8.453542978612619e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-03-01",
+        "history_start": "2022-02-28",
+        "history_end": "2023-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.06886432211815607,
+        "max_weight": 0.15,
+        "covariance_condition": 1281.5774477084183,
+        "min_eigenvalue": 8.633176221772457e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-04-03",
+        "history_start": "2022-03-31",
+        "history_end": "2023-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.07068598531363546,
+        "max_weight": 0.15,
+        "covariance_condition": 1344.702617448238,
+        "min_eigenvalue": 8.13550371419186e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-05-01",
+        "history_start": "2022-04-28",
+        "history_end": "2023-04-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.036795080015676995,
+        "max_weight": 0.15,
+        "covariance_condition": 1265.0027421275377,
+        "min_eigenvalue": 8.37827459054243e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-06-01",
+        "history_start": "2022-05-31",
+        "history_end": "2023-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.14025312946722074,
+        "max_weight": 0.15,
+        "covariance_condition": 1237.108039961147,
+        "min_eigenvalue": 7.423756179717828e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-07-03",
+        "history_start": "2022-06-30",
+        "history_end": "2023-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.036752595213669983,
+        "max_weight": 0.15,
+        "covariance_condition": 1102.0372438164438,
+        "min_eigenvalue": 7.281439930766859e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-08-01",
+        "history_start": "2022-07-29",
+        "history_end": "2023-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.05007054765072563,
+        "max_weight": 0.15,
+        "covariance_condition": 1083.1973797046805,
+        "min_eigenvalue": 7.004452277960204e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-09-01",
+        "history_start": "2022-08-31",
+        "history_end": "2023-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.05016824065241578,
+        "max_weight": 0.15,
+        "covariance_condition": 1024.332012588312,
+        "min_eigenvalue": 6.934938141733234e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-10-02",
+        "history_start": "2022-09-29",
+        "history_end": "2023-09-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.04777815113556635,
+        "max_weight": 0.15,
+        "covariance_condition": 954.7860764184704,
+        "min_eigenvalue": 6.693523307498303e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-11-01",
+        "history_start": "2022-10-31",
+        "history_end": "2023-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.21145370775077887,
+        "max_weight": 0.15,
+        "covariance_condition": 844.3565041497193,
+        "min_eigenvalue": 6.5591306916856e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-12-01",
+        "history_start": "2022-11-30",
+        "history_end": "2023-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.20953447815914888,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 699.6849702579572,
+        "min_eigenvalue": 6.865129368950738e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-01-02",
+        "history_start": "2022-12-29",
+        "history_end": "2023-12-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.16029316373213426,
+        "max_weight": 0.15,
+        "covariance_condition": 692.465256755,
+        "min_eigenvalue": 6.622903748883417e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-02-01",
+        "history_start": "2023-01-31",
+        "history_end": "2024-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.126652598903051,
+        "max_weight": 0.15,
+        "covariance_condition": 632.3548683126885,
+        "min_eigenvalue": 6.875484676203689e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-03-01",
+        "history_start": "2023-03-01",
+        "history_end": "2024-02-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.11853407108438174,
+        "max_weight": 0.15,
+        "covariance_condition": 638.1823828056016,
+        "min_eigenvalue": 6.7006100409454055e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-04-01",
+        "history_start": "2023-03-29",
+        "history_end": "2024-03-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.1256821017115718,
+        "max_weight": 0.15,
+        "covariance_condition": 535.6226307886247,
+        "min_eigenvalue": 6.953707364107206e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-05-01",
+        "history_start": "2023-05-01",
+        "history_end": "2024-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.12415675228035347,
+        "max_weight": 0.15,
+        "covariance_condition": 549.2770117001514,
+        "min_eigenvalue": 6.635712559841457e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-06-03",
+        "history_start": "2023-06-01",
+        "history_end": "2024-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.11497537045673023,
+        "max_weight": 0.15,
+        "covariance_condition": 478.3037789170633,
+        "min_eigenvalue": 7.3044837098188185e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-07-01",
+        "history_start": "2023-06-29",
+        "history_end": "2024-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.09146144654012715,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 457.51318813425155,
+        "min_eigenvalue": 7.183157817478033e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-08-01",
+        "history_start": "2023-08-01",
+        "history_end": "2024-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.11067147969137556,
+        "max_weight": 0.15,
+        "covariance_condition": 515.7661119609052,
+        "min_eigenvalue": 6.763609862491176e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-09-03",
+        "history_start": "2023-08-31",
+        "history_end": "2024-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1336265334618044,
+        "max_weight": 0.15,
+        "covariance_condition": 500.75505421171835,
+        "min_eigenvalue": 7.942084546743021e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-10-01",
+        "history_start": "2023-09-29",
+        "history_end": "2024-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.08451493344778033,
+        "max_weight": 0.15,
+        "covariance_condition": 540.5622947454993,
+        "min_eigenvalue": 7.506124896942539e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-11-01",
+        "history_start": "2023-11-01",
+        "history_end": "2024-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.21795291845849157,
+        "max_weight": 0.14999999999999994,
+        "covariance_condition": 505.38555474369025,
+        "min_eigenvalue": 7.4735369534072714e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-12-02",
+        "history_start": "2023-11-30",
+        "history_end": "2024-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.14584154461932222,
+        "max_weight": 0.13719958743911098,
+        "covariance_condition": 456.19350064966915,
+        "min_eigenvalue": 8.174161413819485e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-01-02",
+        "history_start": "2024-01-02",
+        "history_end": "2024-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.13101382211363236,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 427.7766212865608,
+        "min_eigenvalue": 8.635445641813947e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-02-03",
+        "history_start": "2024-01-31",
+        "history_end": "2025-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.15806726246655647,
+        "max_weight": 0.15,
+        "covariance_condition": 424.5737788553007,
+        "min_eigenvalue": 8.888902999249448e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-03-03",
+        "history_start": "2024-02-28",
+        "history_end": "2025-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.15248850235805173,
+        "max_weight": 0.134845255264168,
+        "covariance_condition": 419.09531281852753,
+        "min_eigenvalue": 8.84585234888125e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-04-01",
+        "history_start": "2024-03-28",
+        "history_end": "2025-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1455519057551382,
+        "max_weight": 0.11916284200227152,
+        "covariance_condition": 458.14944127905005,
+        "min_eigenvalue": 9.179712280459493e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-05-01",
+        "history_start": "2024-04-29",
+        "history_end": "2025-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.3724229790558371,
+        "max_weight": 0.15,
+        "covariance_condition": 754.0884046794498,
+        "min_eigenvalue": 9.636504265886235e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-06-02",
+        "history_start": "2024-05-29",
+        "history_end": "2025-05-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.12792481731573851,
+        "max_weight": 0.15,
+        "covariance_condition": 774.0724780051409,
+        "min_eigenvalue": 9.72994441780355e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-07-01",
+        "history_start": "2024-06-27",
+        "history_end": "2025-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.07081448404011137,
+        "max_weight": 0.1499999999999999,
+        "covariance_condition": 803.2791569797893,
+        "min_eigenvalue": 9.43124058702112e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-08-01",
+        "history_start": "2024-07-30",
+        "history_end": "2025-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.08221884411058647,
+        "max_weight": 0.15,
+        "covariance_condition": 787.4297862441994,
+        "min_eigenvalue": 9.440912132426248e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-09-02",
+        "history_start": "2024-08-28",
+        "history_end": "2025-08-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.09236272961115312,
+        "max_weight": 0.15,
+        "covariance_condition": 779.7811483620807,
+        "min_eigenvalue": 8.932125374975298e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-10-01",
+        "history_start": "2024-09-27",
+        "history_end": "2025-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.035180541179442304,
+        "max_weight": 0.15,
+        "covariance_condition": 728.336875624821,
+        "min_eigenvalue": 9.278951718690417e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-11-03",
+        "history_start": "2024-10-30",
+        "history_end": "2025-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.13743427313304046,
+        "max_weight": 0.15,
+        "covariance_condition": 781.6322738071132,
+        "min_eigenvalue": 8.839871507291998e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-12-01",
+        "history_start": "2024-11-26",
+        "history_end": "2025-11-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.08525398286039834,
+        "max_weight": 0.15,
+        "covariance_condition": 761.9925990899233,
+        "min_eigenvalue": 8.957387911309119e-06,
+        "shrinkage": null
+      }
+    ],
+    "ewma": [
+      {
+        "date": "2019-01-02",
+        "history_start": "2017-12-29",
+        "history_end": "2018-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.7657039419521512,
+        "max_weight": 0.15,
+        "covariance_condition": 1368.8546552673397,
+        "min_eigenvalue": 4.904030626353733e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-02-01",
+        "history_start": "2018-01-31",
+        "history_end": "2019-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.164433967632802,
+        "max_weight": 0.15,
+        "covariance_condition": 1131.0159270532615,
+        "min_eigenvalue": 6.086260596566315e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-03-01",
+        "history_start": "2018-02-28",
+        "history_end": "2019-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.08404965190077007,
+        "max_weight": 0.15,
+        "covariance_condition": 921.0548616366805,
+        "min_eigenvalue": 6.343368052145472e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-04-01",
+        "history_start": "2018-03-29",
+        "history_end": "2019-03-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.06162108720609187,
+        "max_weight": 0.15,
+        "covariance_condition": 869.1597731165945,
+        "min_eigenvalue": 6.158946732306353e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-05-01",
+        "history_start": "2018-04-30",
+        "history_end": "2019-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06573446925053872,
+        "max_weight": 0.15,
+        "covariance_condition": 791.5182664949244,
+        "min_eigenvalue": 5.847155919080658e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-06-03",
+        "history_start": "2018-05-31",
+        "history_end": "2019-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.10440060332456577,
+        "max_weight": 0.15,
+        "covariance_condition": 847.7705008607629,
+        "min_eigenvalue": 5.645056888183754e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-07-01",
+        "history_start": "2018-06-28",
+        "history_end": "2019-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.10663209929836899,
+        "max_weight": 0.15,
+        "covariance_condition": 842.9900045942263,
+        "min_eigenvalue": 5.3972416182481795e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-08-01",
+        "history_start": "2018-07-31",
+        "history_end": "2019-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.14166314431327817,
+        "max_weight": 0.15,
+        "covariance_condition": 797.8235557425754,
+        "min_eigenvalue": 4.994558546384998e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-09-03",
+        "history_start": "2018-08-30",
+        "history_end": "2019-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.21168294964820472,
+        "max_weight": 0.15,
+        "covariance_condition": 1095.4579368545917,
+        "min_eigenvalue": 4.87675519459246e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-10-01",
+        "history_start": "2018-09-28",
+        "history_end": "2019-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1027861512029631,
+        "max_weight": 0.15,
+        "covariance_condition": 1049.8981238998974,
+        "min_eigenvalue": 4.664928696903778e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-11-01",
+        "history_start": "2018-10-31",
+        "history_end": "2019-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.13493592848841213,
+        "max_weight": 0.15,
+        "covariance_condition": 822.3635414672041,
+        "min_eigenvalue": 5.460994270819173e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2019-12-02",
+        "history_start": "2018-11-29",
+        "history_end": "2019-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.15521085381914515,
+        "max_weight": 0.15,
+        "covariance_condition": 688.4629065495077,
+        "min_eigenvalue": 5.513818100302617e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-01-02",
+        "history_start": "2019-01-02",
+        "history_end": "2019-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.09759742311412788,
+        "max_weight": 0.15,
+        "covariance_condition": 642.6469068655554,
+        "min_eigenvalue": 4.8183013258830765e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-02-03",
+        "history_start": "2019-02-01",
+        "history_end": "2020-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.23562256068588255,
+        "max_weight": 0.15,
+        "covariance_condition": 578.7416789584917,
+        "min_eigenvalue": 5.254495330012861e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-03-02",
+        "history_start": "2019-03-01",
+        "history_end": "2020-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.2863257404080989,
+        "max_weight": 0.15,
+        "covariance_condition": 878.3251641827833,
+        "min_eigenvalue": 5.305327044208694e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-04-01",
+        "history_start": "2019-04-02",
+        "history_end": "2020-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.425034470763731,
+        "max_weight": 0.15,
+        "covariance_condition": 6070.753170477743,
+        "min_eigenvalue": 6.64118357836553e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-05-01",
+        "history_start": "2019-05-02",
+        "history_end": "2020-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.21906528479011678,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 5420.464203977833,
+        "min_eigenvalue": 7.677331745692694e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-06-01",
+        "history_start": "2019-05-31",
+        "history_end": "2020-05-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.07623914752776417,
+        "max_weight": 0.15,
+        "covariance_condition": 4608.44657901039,
+        "min_eigenvalue": 8.393188512817673e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-07-01",
+        "history_start": "2019-07-02",
+        "history_end": "2020-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1449582223412224,
+        "max_weight": 0.15,
+        "covariance_condition": 3984.666238610518,
+        "min_eigenvalue": 9.134296166436664e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-08-03",
+        "history_start": "2019-08-02",
+        "history_end": "2020-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.061201817222011276,
+        "max_weight": 0.15,
+        "covariance_condition": 3491.277468547498,
+        "min_eigenvalue": 8.730930567041697e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-09-01",
+        "history_start": "2019-09-03",
+        "history_end": "2020-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.06364671201778267,
+        "max_weight": 0.15,
+        "covariance_condition": 2743.115039889298,
+        "min_eigenvalue": 9.08891223625052e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-10-01",
+        "history_start": "2019-10-02",
+        "history_end": "2020-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.07621528693778581,
+        "max_weight": 0.15,
+        "covariance_condition": 2290.3232613113946,
+        "min_eigenvalue": 9.676054892769057e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-11-02",
+        "history_start": "2019-11-01",
+        "history_end": "2020-10-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06061651444552188,
+        "max_weight": 0.15,
+        "covariance_condition": 1844.2817023963769,
+        "min_eigenvalue": 1.0416613549468857e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2020-12-01",
+        "history_start": "2019-12-02",
+        "history_end": "2020-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.02816225651759286,
+        "max_weight": 0.15,
+        "covariance_condition": 1645.6536001130958,
+        "min_eigenvalue": 1.0748811374960572e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-01-04",
+        "history_start": "2020-01-03",
+        "history_end": "2020-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.03923906142096766,
+        "max_weight": 0.15,
+        "covariance_condition": 1447.4479474224063,
+        "min_eigenvalue": 1.0067578760335505e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-02-01",
+        "history_start": "2020-01-31",
+        "history_end": "2021-01-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.14042740582450455,
+        "max_weight": 0.15,
+        "covariance_condition": 1321.489852166883,
+        "min_eigenvalue": 1.0143490544085864e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-03-01",
+        "history_start": "2020-02-28",
+        "history_end": "2021-02-26",
+        "history_rows": 252,
+        "one_way_turnover": 0.044064252978726556,
+        "max_weight": 0.15,
+        "covariance_condition": 1091.315531561249,
+        "min_eigenvalue": 1.1042694332799684e-05,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-04-01",
+        "history_start": "2020-04-01",
+        "history_end": "2021-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.14260140823719974,
+        "max_weight": 0.15,
+        "covariance_condition": 933.9428334220494,
+        "min_eigenvalue": 9.05071729573702e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-05-03",
+        "history_start": "2020-05-01",
+        "history_end": "2021-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.10247837784172563,
+        "max_weight": 0.14999999999999994,
+        "covariance_condition": 893.7603373917825,
+        "min_eigenvalue": 7.5497391140961155e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-06-01",
+        "history_start": "2020-06-01",
+        "history_end": "2021-05-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.06533063209911592,
+        "max_weight": 0.15,
+        "covariance_condition": 838.7582256391327,
+        "min_eigenvalue": 7.330536337402773e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-07-01",
+        "history_start": "2020-07-01",
+        "history_end": "2021-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.12173963310258411,
+        "max_weight": 0.15,
+        "covariance_condition": 832.6316272552549,
+        "min_eigenvalue": 6.173473721414504e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-08-02",
+        "history_start": "2020-07-31",
+        "history_end": "2021-07-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.09089538302682557,
+        "max_weight": 0.15,
+        "covariance_condition": 852.21386099016,
+        "min_eigenvalue": 6.107554868663738e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-09-01",
+        "history_start": "2020-09-01",
+        "history_end": "2021-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.09403661128077105,
+        "max_weight": 0.15,
+        "covariance_condition": 913.116357153235,
+        "min_eigenvalue": 5.327754096451618e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-10-01",
+        "history_start": "2020-10-01",
+        "history_end": "2021-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.21107311156477038,
+        "max_weight": 0.15,
+        "covariance_condition": 846.3242733490017,
+        "min_eigenvalue": 5.463060129500859e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-11-01",
+        "history_start": "2020-10-30",
+        "history_end": "2021-10-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.21410985999536797,
+        "max_weight": 0.15,
+        "covariance_condition": 823.1188095487244,
+        "min_eigenvalue": 5.014039195952244e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2021-12-01",
+        "history_start": "2020-12-01",
+        "history_end": "2021-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.20957929437790662,
+        "max_weight": 0.15,
+        "covariance_condition": 825.9506244464083,
+        "min_eigenvalue": 4.924040369177544e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-01-03",
+        "history_start": "2021-01-04",
+        "history_end": "2021-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.2504300595664808,
+        "max_weight": 0.15,
+        "covariance_condition": 837.3964445275884,
+        "min_eigenvalue": 5.370896375399269e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-02-01",
+        "history_start": "2021-02-02",
+        "history_end": "2022-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.22382090244902456,
+        "max_weight": 0.15,
+        "covariance_condition": 894.8591608614083,
+        "min_eigenvalue": 5.584574325864547e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-03-01",
+        "history_start": "2021-03-02",
+        "history_end": "2022-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.12558288662960526,
+        "max_weight": 0.15,
+        "covariance_condition": 938.485839992451,
+        "min_eigenvalue": 6.107662509128086e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-04-01",
+        "history_start": "2021-04-05",
+        "history_end": "2022-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1922550305937366,
+        "max_weight": 0.1499999999999999,
+        "covariance_condition": 1165.4847221402645,
+        "min_eigenvalue": 5.75742815335732e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-05-02",
+        "history_start": "2021-05-03",
+        "history_end": "2022-04-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.3122121611871501,
+        "max_weight": 0.15,
+        "covariance_condition": 1155.4528219387823,
+        "min_eigenvalue": 6.356683394247067e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-06-01",
+        "history_start": "2021-06-02",
+        "history_end": "2022-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.23478705465063393,
+        "max_weight": 0.15,
+        "covariance_condition": 1547.7036632682664,
+        "min_eigenvalue": 6.389955591049347e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-07-01",
+        "history_start": "2021-07-01",
+        "history_end": "2022-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.17306217385137565,
+        "max_weight": 0.15,
+        "covariance_condition": 1586.5355537386877,
+        "min_eigenvalue": 7.324364051986008e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-08-01",
+        "history_start": "2021-07-30",
+        "history_end": "2022-07-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.09292429310876482,
+        "max_weight": 0.15,
+        "covariance_condition": 1656.2892845585814,
+        "min_eigenvalue": 6.744431141647692e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-09-01",
+        "history_start": "2021-09-01",
+        "history_end": "2022-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.17977932938530578,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 1436.6897877896286,
+        "min_eigenvalue": 7.3397773352229e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-10-03",
+        "history_start": "2021-10-01",
+        "history_end": "2022-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.18588963012961884,
+        "max_weight": 0.15,
+        "covariance_condition": 1390.3980382969712,
+        "min_eigenvalue": 7.913261655468746e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-11-01",
+        "history_start": "2021-11-01",
+        "history_end": "2022-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.16481884240952835,
+        "max_weight": 0.15,
+        "covariance_condition": 1478.6548903668122,
+        "min_eigenvalue": 8.036170622344152e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2022-12-01",
+        "history_start": "2021-12-01",
+        "history_end": "2022-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.10196560165279366,
+        "max_weight": 0.15,
+        "covariance_condition": 1616.7049283659917,
+        "min_eigenvalue": 7.894997186441877e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-01-03",
+        "history_start": "2021-12-31",
+        "history_end": "2022-12-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06036296884738188,
+        "max_weight": 0.15,
+        "covariance_condition": 1524.3190208045878,
+        "min_eigenvalue": 7.590168854410571e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-02-01",
+        "history_start": "2022-01-31",
+        "history_end": "2023-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.10102663759365241,
+        "max_weight": 0.15,
+        "covariance_condition": 1532.318766300613,
+        "min_eigenvalue": 6.902831149376804e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-03-01",
+        "history_start": "2022-02-28",
+        "history_end": "2023-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.090584345182262,
+        "max_weight": 0.15,
+        "covariance_condition": 1328.5705835286903,
+        "min_eigenvalue": 7.06139439995172e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-04-03",
+        "history_start": "2022-03-31",
+        "history_end": "2023-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1468440056331033,
+        "max_weight": 0.15,
+        "covariance_condition": 1376.4479806813952,
+        "min_eigenvalue": 6.630050367528326e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-05-01",
+        "history_start": "2022-04-28",
+        "history_end": "2023-04-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.062262061393361226,
+        "max_weight": 0.15,
+        "covariance_condition": 1457.1147891498929,
+        "min_eigenvalue": 5.618567539921227e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-06-01",
+        "history_start": "2022-05-31",
+        "history_end": "2023-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.04428503197872211,
+        "max_weight": 0.15,
+        "covariance_condition": 1302.0909287200375,
+        "min_eigenvalue": 5.4144593981572024e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-07-03",
+        "history_start": "2022-06-30",
+        "history_end": "2023-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.026361346228937696,
+        "max_weight": 0.15,
+        "covariance_condition": 1121.0103510098625,
+        "min_eigenvalue": 5.640619800686744e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-08-01",
+        "history_start": "2022-07-29",
+        "history_end": "2023-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0817337569603408,
+        "max_weight": 0.15,
+        "covariance_condition": 982.7339858045882,
+        "min_eigenvalue": 5.582628702046915e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-09-01",
+        "history_start": "2022-08-31",
+        "history_end": "2023-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1034477575303967,
+        "max_weight": 0.15,
+        "covariance_condition": 827.0146214172402,
+        "min_eigenvalue": 5.785925428880639e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-10-02",
+        "history_start": "2022-09-29",
+        "history_end": "2023-09-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.23795542020746757,
+        "max_weight": 0.15,
+        "covariance_condition": 776.05215294,
+        "min_eigenvalue": 5.5839685286618694e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-11-01",
+        "history_start": "2022-10-31",
+        "history_end": "2023-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.2875520848830473,
+        "max_weight": 0.15,
+        "covariance_condition": 690.7417422185944,
+        "min_eigenvalue": 6.256140308454745e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2023-12-01",
+        "history_start": "2022-11-30",
+        "history_end": "2023-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.20187334979948,
+        "max_weight": 0.15,
+        "covariance_condition": 729.8114625110968,
+        "min_eigenvalue": 5.957272188030714e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-01-02",
+        "history_start": "2022-12-29",
+        "history_end": "2023-12-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.17749981815215854,
+        "max_weight": 0.1499999999999999,
+        "covariance_condition": 830.224232607518,
+        "min_eigenvalue": 5.264752142656498e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-02-01",
+        "history_start": "2023-01-31",
+        "history_end": "2024-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1110664876932242,
+        "max_weight": 0.15,
+        "covariance_condition": 739.33767041384,
+        "min_eigenvalue": 5.466651276964965e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-03-01",
+        "history_start": "2023-03-01",
+        "history_end": "2024-02-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.20031424846656504,
+        "max_weight": 0.15,
+        "covariance_condition": 759.7054032824628,
+        "min_eigenvalue": 5.2115645788418e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-04-01",
+        "history_start": "2023-03-29",
+        "history_end": "2024-03-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.1420060793384825,
+        "max_weight": 0.15,
+        "covariance_condition": 596.5176490829814,
+        "min_eigenvalue": 5.8630037676631525e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-05-01",
+        "history_start": "2023-05-01",
+        "history_end": "2024-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.17758539947275204,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 595.4405750336063,
+        "min_eigenvalue": 5.893477905169234e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-06-03",
+        "history_start": "2023-06-01",
+        "history_end": "2024-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.17876041071071713,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 497.2674295123096,
+        "min_eigenvalue": 6.471343206958106e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-07-01",
+        "history_start": "2023-06-29",
+        "history_end": "2024-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.04131810931192234,
+        "max_weight": 0.15,
+        "covariance_condition": 454.65797903278315,
+        "min_eigenvalue": 6.450898496234821e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-08-01",
+        "history_start": "2023-08-01",
+        "history_end": "2024-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.21741700274828096,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 516.5783538636783,
+        "min_eigenvalue": 6.503519985707697e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-09-03",
+        "history_start": "2023-08-31",
+        "history_end": "2024-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.18472921634929956,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 592.8634352971666,
+        "min_eigenvalue": 7.328785066584603e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-10-01",
+        "history_start": "2023-09-29",
+        "history_end": "2024-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.09041062006333758,
+        "max_weight": 0.15,
+        "covariance_condition": 657.0883674324396,
+        "min_eigenvalue": 6.579087196783667e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-11-01",
+        "history_start": "2023-11-01",
+        "history_end": "2024-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.2693746356609019,
+        "max_weight": 0.15,
+        "covariance_condition": 556.2032340237032,
+        "min_eigenvalue": 6.792953912836528e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2024-12-02",
+        "history_start": "2023-11-30",
+        "history_end": "2024-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.1891312190394319,
+        "max_weight": 0.14093329991986728,
+        "covariance_condition": 557.4770096046665,
+        "min_eigenvalue": 7.179264385327371e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-01-02",
+        "history_start": "2024-01-02",
+        "history_end": "2024-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1857815840964356,
+        "max_weight": 0.15,
+        "covariance_condition": 564.6334495328987,
+        "min_eigenvalue": 7.074771794944419e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-02-03",
+        "history_start": "2024-01-31",
+        "history_end": "2025-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.21078616639473086,
+        "max_weight": 0.15,
+        "covariance_condition": 561.2638918976749,
+        "min_eigenvalue": 6.926741610808619e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-03-03",
+        "history_start": "2024-02-28",
+        "history_end": "2025-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.2110301866454645,
+        "max_weight": 0.15,
+        "covariance_condition": 503.0445848895422,
+        "min_eigenvalue": 7.596433402691109e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-04-01",
+        "history_start": "2024-03-28",
+        "history_end": "2025-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.28445873228580787,
+        "max_weight": 0.15,
+        "covariance_condition": 561.7005799890547,
+        "min_eigenvalue": 8.363642767097888e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-05-01",
+        "history_start": "2024-04-29",
+        "history_end": "2025-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.5026395400965427,
+        "max_weight": 0.15,
+        "covariance_condition": 1427.8952588681416,
+        "min_eigenvalue": 8.157997631996221e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-06-02",
+        "history_start": "2024-05-29",
+        "history_end": "2025-05-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.19514361240262343,
+        "max_weight": 0.15,
+        "covariance_condition": 1361.4030944795159,
+        "min_eigenvalue": 7.811626073477243e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-07-01",
+        "history_start": "2024-06-27",
+        "history_end": "2025-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.10669165237272918,
+        "max_weight": 0.15,
+        "covariance_condition": 1180.6519489577624,
+        "min_eigenvalue": 7.783648686392226e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-08-01",
+        "history_start": "2024-07-30",
+        "history_end": "2025-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.129229700237681,
+        "max_weight": 0.15,
+        "covariance_condition": 1043.3558958628744,
+        "min_eigenvalue": 7.517736000445176e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-09-02",
+        "history_start": "2024-08-28",
+        "history_end": "2025-08-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.11067597509563115,
+        "max_weight": 0.1499999999999999,
+        "covariance_condition": 986.9830265060293,
+        "min_eigenvalue": 6.944280664122684e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-10-01",
+        "history_start": "2024-09-27",
+        "history_end": "2025-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.12494669081900323,
+        "max_weight": 0.15,
+        "covariance_condition": 727.3659121233599,
+        "min_eigenvalue": 8.039592938146043e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-11-03",
+        "history_start": "2024-10-30",
+        "history_end": "2025-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.13327227040679954,
+        "max_weight": 0.15,
+        "covariance_condition": 675.537321224403,
+        "min_eigenvalue": 7.939403052300051e-06,
+        "shrinkage": null
+      },
+      {
+        "date": "2025-12-01",
+        "history_start": "2024-11-26",
+        "history_end": "2025-11-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.12945884439220712,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 636.3851534071947,
+        "min_eigenvalue": 8.208415584910157e-06,
+        "shrinkage": null
+      }
+    ],
+    "ledoit_wolf": [
+      {
+        "date": "2019-01-02",
+        "history_start": "2017-12-29",
+        "history_end": "2018-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.7434338410210517,
+        "max_weight": 0.15,
+        "covariance_condition": 472.11936850823986,
+        "min_eigenvalue": 1.0412485600035856e-05,
+        "shrinkage": 0.030006690318066045
+      },
+      {
+        "date": "2019-02-01",
+        "history_start": "2018-01-31",
+        "history_end": "2019-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0984233866246194,
+        "max_weight": 0.15,
+        "covariance_condition": 480.5230615909595,
+        "min_eigenvalue": 1.1162519650452911e-05,
+        "shrinkage": 0.028317809078105684
+      },
+      {
+        "date": "2019-03-01",
+        "history_start": "2018-02-28",
+        "history_end": "2019-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.08346240854259497,
+        "max_weight": 0.15,
+        "covariance_condition": 402.7728120033514,
+        "min_eigenvalue": 1.1645317123747178e-05,
+        "shrinkage": 0.031830141700168214
+      },
+      {
+        "date": "2019-04-01",
+        "history_start": "2018-03-29",
+        "history_end": "2019-03-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.07052353045534498,
+        "max_weight": 0.15,
+        "covariance_condition": 374.93873945729723,
+        "min_eigenvalue": 1.1993406613500579e-05,
+        "shrinkage": 0.03402901943194532
+      },
+      {
+        "date": "2019-05-01",
+        "history_start": "2018-04-30",
+        "history_end": "2019-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.05811668982295064,
+        "max_weight": 0.15,
+        "covariance_condition": 336.2587535425298,
+        "min_eigenvalue": 1.2491047505167343e-05,
+        "shrinkage": 0.03795766013481817
+      },
+      {
+        "date": "2019-06-03",
+        "history_start": "2018-05-31",
+        "history_end": "2019-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.060627076070567526,
+        "max_weight": 0.15,
+        "covariance_condition": 370.7561687947564,
+        "min_eigenvalue": 1.2162354562750582e-05,
+        "shrinkage": 0.03416091864058544
+      },
+      {
+        "date": "2019-07-01",
+        "history_start": "2018-06-28",
+        "history_end": "2019-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.08742500913419071,
+        "max_weight": 0.15,
+        "covariance_condition": 378.9074636049243,
+        "min_eigenvalue": 1.2215354442355226e-05,
+        "shrinkage": 0.03333474112054764
+      },
+      {
+        "date": "2019-08-01",
+        "history_start": "2018-07-31",
+        "history_end": "2019-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.08715376877863895,
+        "max_weight": 0.15,
+        "covariance_condition": 382.73998911824384,
+        "min_eigenvalue": 1.220084325797702e-05,
+        "shrinkage": 0.032793192717678915
+      },
+      {
+        "date": "2019-09-03",
+        "history_start": "2018-08-30",
+        "history_end": "2019-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.11355280833475204,
+        "max_weight": 0.15,
+        "covariance_condition": 471.37279165498626,
+        "min_eigenvalue": 1.1478809766033293e-05,
+        "shrinkage": 0.027304480789838655
+      },
+      {
+        "date": "2019-10-01",
+        "history_start": "2018-09-28",
+        "history_end": "2019-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.04715143765912273,
+        "max_weight": 0.15,
+        "covariance_condition": 493.9369381820591,
+        "min_eigenvalue": 1.129533842659093e-05,
+        "shrinkage": 0.026036669926815324
+      },
+      {
+        "date": "2019-11-01",
+        "history_start": "2018-10-31",
+        "history_end": "2019-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.10735678944017663,
+        "max_weight": 0.15,
+        "covariance_condition": 447.12408873708915,
+        "min_eigenvalue": 1.133980151128639e-05,
+        "shrinkage": 0.026657991824129035
+      },
+      {
+        "date": "2019-12-02",
+        "history_start": "2018-11-29",
+        "history_end": "2019-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.08023801523775767,
+        "max_weight": 0.15,
+        "covariance_condition": 404.6437513142506,
+        "min_eigenvalue": 1.1385580677398343e-05,
+        "shrinkage": 0.03015588507204577
+      },
+      {
+        "date": "2020-01-02",
+        "history_start": "2019-01-02",
+        "history_end": "2019-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1372221384467215,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 347.2801136346735,
+        "min_eigenvalue": 1.0188105596825298e-05,
+        "shrinkage": 0.030983175189691767
+      },
+      {
+        "date": "2020-02-03",
+        "history_start": "2019-02-01",
+        "history_end": "2020-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.17784357535425105,
+        "max_weight": 0.15,
+        "covariance_condition": 350.727539016282,
+        "min_eigenvalue": 9.220291222979998e-06,
+        "shrinkage": 0.029581284762922565
+      },
+      {
+        "date": "2020-03-02",
+        "history_start": "2019-03-01",
+        "history_end": "2020-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.13129737508687722,
+        "max_weight": 0.15,
+        "covariance_condition": 360.36105511435835,
+        "min_eigenvalue": 1.084990600621751e-05,
+        "shrinkage": 0.03199376561465684
+      },
+      {
+        "date": "2020-04-01",
+        "history_start": "2019-04-02",
+        "history_end": "2020-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.42737523255928095,
+        "max_weight": 0.15,
+        "covariance_condition": 344.5186428450295,
+        "min_eigenvalue": 4.919649352513816e-05,
+        "shrinkage": 0.08212820914376757
+      },
+      {
+        "date": "2020-05-01",
+        "history_start": "2019-05-02",
+        "history_end": "2020-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1131501532999187,
+        "max_weight": 0.15,
+        "covariance_condition": 447.94621350939826,
+        "min_eigenvalue": 4.6011158701207954e-05,
+        "shrinkage": 0.06207915925731046
+      },
+      {
+        "date": "2020-06-01",
+        "history_start": "2019-05-31",
+        "history_end": "2020-05-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.045553548465541036,
+        "max_weight": 0.15,
+        "covariance_condition": 489.2676097307978,
+        "min_eigenvalue": 4.533826054776946e-05,
+        "shrinkage": 0.055491082721096784
+      },
+      {
+        "date": "2020-07-01",
+        "history_start": "2019-07-02",
+        "history_end": "2020-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06164443107383024,
+        "max_weight": 0.15,
+        "covariance_condition": 552.9336914611996,
+        "min_eigenvalue": 4.367858590253211e-05,
+        "shrinkage": 0.04873663430995283
+      },
+      {
+        "date": "2020-08-03",
+        "history_start": "2019-08-02",
+        "history_end": "2020-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.031594078724464104,
+        "max_weight": 0.15,
+        "covariance_condition": 553.7806468142808,
+        "min_eigenvalue": 4.4327126920955636e-05,
+        "shrinkage": 0.04743121139069056
+      },
+      {
+        "date": "2020-09-01",
+        "history_start": "2019-09-03",
+        "history_end": "2020-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.04128629715179994,
+        "max_weight": 0.15,
+        "covariance_condition": 521.2310330620536,
+        "min_eigenvalue": 4.580585414548246e-05,
+        "shrinkage": 0.050126580386285535
+      },
+      {
+        "date": "2020-10-01",
+        "history_start": "2019-10-02",
+        "history_end": "2020-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06746260731149566,
+        "max_weight": 0.15,
+        "covariance_condition": 532.5901057175919,
+        "min_eigenvalue": 4.59427786577664e-05,
+        "shrinkage": 0.047970084454952766
+      },
+      {
+        "date": "2020-11-02",
+        "history_start": "2019-11-01",
+        "history_end": "2020-10-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.03891773743432088,
+        "max_weight": 0.15,
+        "covariance_condition": 534.9647921942768,
+        "min_eigenvalue": 4.640521539130834e-05,
+        "shrinkage": 0.046665357577338355
+      },
+      {
+        "date": "2020-12-01",
+        "history_start": "2019-12-02",
+        "history_end": "2020-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.053221853223646844,
+        "max_weight": 0.15,
+        "covariance_condition": 550.5800699694086,
+        "min_eigenvalue": 4.6459306562344795e-05,
+        "shrinkage": 0.044560251513549615
+      },
+      {
+        "date": "2021-01-04",
+        "history_start": "2020-01-03",
+        "history_end": "2020-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.016437739745572184,
+        "max_weight": 0.15,
+        "covariance_condition": 549.9507391749759,
+        "min_eigenvalue": 4.665557933474327e-05,
+        "shrinkage": 0.04435427857367262
+      },
+      {
+        "date": "2021-02-01",
+        "history_start": "2020-01-31",
+        "history_end": "2021-01-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.048294397116188534,
+        "max_weight": 0.15,
+        "covariance_condition": 558.7034173208108,
+        "min_eigenvalue": 4.6646309787257614e-05,
+        "shrinkage": 0.04314693993601416
+      },
+      {
+        "date": "2021-03-01",
+        "history_start": "2020-02-28",
+        "history_end": "2021-02-26",
+        "history_rows": 252,
+        "one_way_turnover": 0.034760605560766655,
+        "max_weight": 0.15,
+        "covariance_condition": 529.377595716627,
+        "min_eigenvalue": 4.822078365146555e-05,
+        "shrinkage": 0.04504481758178871
+      },
+      {
+        "date": "2021-04-01",
+        "history_start": "2020-04-01",
+        "history_end": "2021-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.22499638652788573,
+        "max_weight": 0.15,
+        "covariance_condition": 491.1824925068721,
+        "min_eigenvalue": 2.4933528010372085e-05,
+        "shrinkage": 0.030656182111626042
+      },
+      {
+        "date": "2021-05-03",
+        "history_start": "2020-05-01",
+        "history_end": "2021-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.14148159564619475,
+        "max_weight": 0.15,
+        "covariance_condition": 434.05344527652187,
+        "min_eigenvalue": 2.0791002041410912e-05,
+        "shrinkage": 0.03357279198580021
+      },
+      {
+        "date": "2021-06-01",
+        "history_start": "2020-06-01",
+        "history_end": "2021-05-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.12740481011224813,
+        "max_weight": 0.15,
+        "covariance_condition": 359.84742367816364,
+        "min_eigenvalue": 2.0714573988537576e-05,
+        "shrinkage": 0.038369274708456025
+      },
+      {
+        "date": "2021-07-01",
+        "history_start": "2020-07-01",
+        "history_end": "2021-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.14778420860354746,
+        "max_weight": 0.15,
+        "covariance_condition": 332.90290011445865,
+        "min_eigenvalue": 1.6792014965205454e-05,
+        "shrinkage": 0.031746112960574585
+      },
+      {
+        "date": "2021-08-02",
+        "history_start": "2020-07-31",
+        "history_end": "2021-07-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.0698681139340137,
+        "max_weight": 0.15,
+        "covariance_condition": 354.0932388991694,
+        "min_eigenvalue": 1.5548914088858236e-05,
+        "shrinkage": 0.031084551502773467
+      },
+      {
+        "date": "2021-09-01",
+        "history_start": "2020-09-01",
+        "history_end": "2021-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.0372077210902908,
+        "max_weight": 0.15,
+        "covariance_condition": 403.2707375835744,
+        "min_eigenvalue": 1.3922611646605739e-05,
+        "shrinkage": 0.02965067310146304
+      },
+      {
+        "date": "2021-10-01",
+        "history_start": "2020-10-01",
+        "history_end": "2021-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.17419823974199544,
+        "max_weight": 0.15,
+        "covariance_condition": 390.8010936635122,
+        "min_eigenvalue": 1.3205632504755885e-05,
+        "shrinkage": 0.030074884750640254
+      },
+      {
+        "date": "2021-11-01",
+        "history_start": "2020-10-30",
+        "history_end": "2021-10-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.1116325646361512,
+        "max_weight": 0.15,
+        "covariance_condition": 356.7527527425398,
+        "min_eigenvalue": 1.3438779142866313e-05,
+        "shrinkage": 0.032356939886410106
+      },
+      {
+        "date": "2021-12-01",
+        "history_start": "2020-12-01",
+        "history_end": "2021-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.08184463415792431,
+        "max_weight": 0.15,
+        "covariance_condition": 357.5202174108936,
+        "min_eigenvalue": 1.2156095476223629e-05,
+        "shrinkage": 0.02886178502992826
+      },
+      {
+        "date": "2022-01-03",
+        "history_start": "2021-01-04",
+        "history_end": "2021-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.07556945939993041,
+        "max_weight": 0.15,
+        "covariance_condition": 397.78799961138094,
+        "min_eigenvalue": 1.1766054672784858e-05,
+        "shrinkage": 0.026484894354313348
+      },
+      {
+        "date": "2022-02-01",
+        "history_start": "2021-02-02",
+        "history_end": "2022-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.17962327147047236,
+        "max_weight": 0.15,
+        "covariance_condition": 370.564362701861,
+        "min_eigenvalue": 1.2476961057846595e-05,
+        "shrinkage": 0.026223152928472913
+      },
+      {
+        "date": "2022-03-01",
+        "history_start": "2021-03-02",
+        "history_end": "2022-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.1707884619939521,
+        "max_weight": 0.14999999999999994,
+        "covariance_condition": 388.0161177562384,
+        "min_eigenvalue": 1.2050932638092514e-05,
+        "shrinkage": 0.025245528702254313
+      },
+      {
+        "date": "2022-04-01",
+        "history_start": "2021-04-05",
+        "history_end": "2022-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.15190137159590578,
+        "max_weight": 0.15,
+        "covariance_condition": 378.65426754347084,
+        "min_eigenvalue": 1.2927802696144659e-05,
+        "shrinkage": 0.02685832231370951
+      },
+      {
+        "date": "2022-05-02",
+        "history_start": "2021-05-03",
+        "history_end": "2022-04-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.1610420518160099,
+        "max_weight": 0.15,
+        "covariance_condition": 392.18920558635165,
+        "min_eigenvalue": 1.376184823792563e-05,
+        "shrinkage": 0.02723530076562454
+      },
+      {
+        "date": "2022-06-01",
+        "history_start": "2021-06-02",
+        "history_end": "2022-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.20160025978761129,
+        "max_weight": 0.15,
+        "covariance_condition": 473.21462975348607,
+        "min_eigenvalue": 1.3891638963648027e-05,
+        "shrinkage": 0.025227984435986194
+      },
+      {
+        "date": "2022-07-01",
+        "history_start": "2021-07-01",
+        "history_end": "2022-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1306685728734891,
+        "max_weight": 0.15,
+        "covariance_condition": 536.5328606266368,
+        "min_eigenvalue": 1.4650878740770693e-05,
+        "shrinkage": 0.022798470474752874
+      },
+      {
+        "date": "2022-08-01",
+        "history_start": "2021-07-30",
+        "history_end": "2022-07-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.0438527011866583,
+        "max_weight": 0.15,
+        "covariance_condition": 507.82310716614194,
+        "min_eigenvalue": 1.6025886006578614e-05,
+        "shrinkage": 0.022442613788366546
+      },
+      {
+        "date": "2022-09-01",
+        "history_start": "2021-09-01",
+        "history_end": "2022-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.08564078991587085,
+        "max_weight": 0.15,
+        "covariance_condition": 547.9653971471631,
+        "min_eigenvalue": 1.5688699427551124e-05,
+        "shrinkage": 0.02081083583161755
+      },
+      {
+        "date": "2022-10-03",
+        "history_start": "2021-10-01",
+        "history_end": "2022-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.11898340163404933,
+        "max_weight": 0.15,
+        "covariance_condition": 608.837214471673,
+        "min_eigenvalue": 1.5309978991296567e-05,
+        "shrinkage": 0.01905918995258475
+      },
+      {
+        "date": "2022-11-01",
+        "history_start": "2021-11-01",
+        "history_end": "2022-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.06403830412018474,
+        "max_weight": 0.15,
+        "covariance_condition": 696.2283151730852,
+        "min_eigenvalue": 1.4804861162455708e-05,
+        "shrinkage": 0.017089311560617992
+      },
+      {
+        "date": "2022-12-01",
+        "history_start": "2021-12-01",
+        "history_end": "2022-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06347150332802518,
+        "max_weight": 0.15,
+        "covariance_condition": 708.686693182091,
+        "min_eigenvalue": 1.592090394194967e-05,
+        "shrinkage": 0.01924471406848837
+      },
+      {
+        "date": "2023-01-03",
+        "history_start": "2021-12-31",
+        "history_end": "2022-12-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.022189079458273916,
+        "max_weight": 0.15,
+        "covariance_condition": 702.3371017022632,
+        "min_eigenvalue": 1.6008190439102808e-05,
+        "shrinkage": 0.019284106277584437
+      },
+      {
+        "date": "2023-02-01",
+        "history_start": "2022-01-31",
+        "history_end": "2023-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.05092547433416272,
+        "max_weight": 0.15,
+        "covariance_condition": 705.1049904289631,
+        "min_eigenvalue": 1.5987800767153542e-05,
+        "shrinkage": 0.019062494402876
+      },
+      {
+        "date": "2023-03-01",
+        "history_start": "2022-02-28",
+        "history_end": "2023-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.06555424494617228,
+        "max_weight": 0.15,
+        "covariance_condition": 660.850087991443,
+        "min_eigenvalue": 1.6350526120302077e-05,
+        "shrinkage": 0.020222696236097425
+      },
+      {
+        "date": "2023-04-03",
+        "history_start": "2022-03-31",
+        "history_end": "2023-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.06984149764644243,
+        "max_weight": 0.15,
+        "covariance_condition": 693.9314281309438,
+        "min_eigenvalue": 1.540321209574866e-05,
+        "shrinkage": 0.019741169343896088
+      },
+      {
+        "date": "2023-05-01",
+        "history_start": "2022-04-28",
+        "history_end": "2023-04-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.03423939788562598,
+        "max_weight": 0.15,
+        "covariance_condition": 669.2178036275503,
+        "min_eigenvalue": 1.546805484482033e-05,
+        "shrinkage": 0.020108570564860935
+      },
+      {
+        "date": "2023-06-01",
+        "history_start": "2022-05-31",
+        "history_end": "2023-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.14786743030548727,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 610.2773061498154,
+        "min_eigenvalue": 1.4657780307361622e-05,
+        "shrinkage": 0.02292050642952853
+      },
+      {
+        "date": "2023-07-03",
+        "history_start": "2022-06-30",
+        "history_end": "2023-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.045786597992073436,
+        "max_weight": 0.15,
+        "covariance_condition": 539.2155396030003,
+        "min_eigenvalue": 1.4464454842217144e-05,
+        "shrinkage": 0.025087045641368884
+      },
+      {
+        "date": "2023-08-01",
+        "history_start": "2022-07-29",
+        "history_end": "2023-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.04784631206696947,
+        "max_weight": 0.15,
+        "covariance_condition": 515.8406845815504,
+        "min_eigenvalue": 1.4271043636778994e-05,
+        "shrinkage": 0.026861278282073506
+      },
+      {
+        "date": "2023-09-01",
+        "history_start": "2022-08-31",
+        "history_end": "2023-08-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.05774619084337074,
+        "max_weight": 0.15,
+        "covariance_condition": 476.77868337981624,
+        "min_eigenvalue": 1.4422998992017578e-05,
+        "shrinkage": 0.029203457826865738
+      },
+      {
+        "date": "2023-10-02",
+        "history_start": "2022-09-29",
+        "history_end": "2023-09-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.06071302489897328,
+        "max_weight": 0.15,
+        "covariance_condition": 426.40075467239694,
+        "min_eigenvalue": 1.4460408532779392e-05,
+        "shrinkage": 0.032613817646290136
+      },
+      {
+        "date": "2023-11-01",
+        "history_start": "2022-10-31",
+        "history_end": "2023-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.22191330286673172,
+        "max_weight": 0.15,
+        "covariance_condition": 355.4980461315997,
+        "min_eigenvalue": 1.4949620623602921e-05,
+        "shrinkage": 0.03813670146592514
+      },
+      {
+        "date": "2023-12-01",
+        "history_start": "2022-11-30",
+        "history_end": "2023-11-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1716083825372965,
+        "max_weight": 0.15,
+        "covariance_condition": 414.40271488464833,
+        "min_eigenvalue": 1.1289692729112515e-05,
+        "shrinkage": 0.02309543526929798
+      },
+      {
+        "date": "2024-01-02",
+        "history_start": "2022-12-29",
+        "history_end": "2023-12-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.134750395048,
+        "max_weight": 0.15,
+        "covariance_condition": 405.37403918733673,
+        "min_eigenvalue": 1.1011037540520323e-05,
+        "shrinkage": 0.02384333984758624
+      },
+      {
+        "date": "2024-02-01",
+        "history_start": "2023-01-31",
+        "history_end": "2024-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.11662554097389177,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 370.78085816694403,
+        "min_eigenvalue": 1.1394912871352845e-05,
+        "shrinkage": 0.025447136250301074
+      },
+      {
+        "date": "2024-03-01",
+        "history_start": "2023-03-01",
+        "history_end": "2024-02-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.126453917985785,
+        "max_weight": 0.15,
+        "covariance_condition": 363.40836112867987,
+        "min_eigenvalue": 1.142141069722969e-05,
+        "shrinkage": 0.026655289790911807
+      },
+      {
+        "date": "2024-04-01",
+        "history_start": "2023-03-29",
+        "history_end": "2024-03-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.1289863770085713,
+        "max_weight": 0.14381452884412255,
+        "covariance_condition": 305.24532728730605,
+        "min_eigenvalue": 1.1806529124323234e-05,
+        "shrinkage": 0.02991624899637237
+      },
+      {
+        "date": "2024-05-01",
+        "history_start": "2023-05-01",
+        "history_end": "2024-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.12504717187715964,
+        "max_weight": 0.15,
+        "covariance_condition": 299.73703047883004,
+        "min_eigenvalue": 1.1749703845173426e-05,
+        "shrinkage": 0.031376064114346874
+      },
+      {
+        "date": "2024-06-03",
+        "history_start": "2023-06-01",
+        "history_end": "2024-05-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.10699933908237504,
+        "max_weight": 0.15,
+        "covariance_condition": 269.679048238545,
+        "min_eigenvalue": 1.2499742223128722e-05,
+        "shrinkage": 0.032886869665330026
+      },
+      {
+        "date": "2024-07-01",
+        "history_start": "2023-06-29",
+        "history_end": "2024-06-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.07980512410926745,
+        "max_weight": 0.15,
+        "covariance_condition": 253.64293241419264,
+        "min_eigenvalue": 1.2482005433779876e-05,
+        "shrinkage": 0.03450594577084671
+      },
+      {
+        "date": "2024-08-01",
+        "history_start": "2023-08-01",
+        "history_end": "2024-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.10875683145603578,
+        "max_weight": 0.15,
+        "covariance_condition": 267.2229511887287,
+        "min_eigenvalue": 1.2567379301932336e-05,
+        "shrinkage": 0.035219452872897995
+      },
+      {
+        "date": "2024-09-03",
+        "history_start": "2023-08-31",
+        "history_end": "2024-08-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.1291703220817126,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 283.53836978330986,
+        "min_eigenvalue": 1.3544007016894365e-05,
+        "shrinkage": 0.032034845806841544
+      },
+      {
+        "date": "2024-10-01",
+        "history_start": "2023-09-29",
+        "history_end": "2024-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.10226433104709845,
+        "max_weight": 0.15,
+        "covariance_condition": 296.4523759691236,
+        "min_eigenvalue": 1.3214295046502118e-05,
+        "shrinkage": 0.03216588586469526
+      },
+      {
+        "date": "2024-11-01",
+        "history_start": "2023-11-01",
+        "history_end": "2024-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.21252189104150734,
+        "max_weight": 0.1499999999999999,
+        "covariance_condition": 264.3048939938551,
+        "min_eigenvalue": 1.3739180907938649e-05,
+        "shrinkage": 0.03648658384701518
+      },
+      {
+        "date": "2024-12-02",
+        "history_start": "2023-11-30",
+        "history_end": "2024-11-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.13750294080434838,
+        "max_weight": 0.11740647723229117,
+        "covariance_condition": 223.6073467108444,
+        "min_eigenvalue": 1.5918509576309062e-05,
+        "shrinkage": 0.04384246089548547
+      },
+      {
+        "date": "2025-01-02",
+        "history_start": "2024-01-02",
+        "history_end": "2024-12-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.12280537370816996,
+        "max_weight": 0.142888783091972,
+        "covariance_condition": 210.17042957803608,
+        "min_eigenvalue": 1.6743944408201286e-05,
+        "shrinkage": 0.045887676194412134
+      },
+      {
+        "date": "2025-02-03",
+        "history_start": "2024-01-31",
+        "history_end": "2025-01-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.15769416473647535,
+        "max_weight": 0.15,
+        "covariance_condition": 209.82005206161415,
+        "min_eigenvalue": 1.7139831410568548e-05,
+        "shrinkage": 0.04560461545979751
+      },
+      {
+        "date": "2025-03-03",
+        "history_start": "2024-02-28",
+        "history_end": "2025-02-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.17552736826199955,
+        "max_weight": 0.11698981489886166,
+        "covariance_condition": 201.1120090147557,
+        "min_eigenvalue": 1.7535706531887765e-05,
+        "shrinkage": 0.047405092922672996
+      },
+      {
+        "date": "2025-04-01",
+        "history_start": "2024-03-28",
+        "history_end": "2025-03-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.1325414982810198,
+        "max_weight": 0.10777810545260043,
+        "covariance_condition": 232.07766752587204,
+        "min_eigenvalue": 1.734319233995817e-05,
+        "shrinkage": 0.041203207797435096
+      },
+      {
+        "date": "2025-05-01",
+        "history_start": "2024-04-29",
+        "history_end": "2025-04-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.36693396153911756,
+        "max_weight": 0.14999999999999997,
+        "covariance_condition": 221.8669963099814,
+        "min_eigenvalue": 3.0237214826578342e-05,
+        "shrinkage": 0.07608088789935084
+      },
+      {
+        "date": "2025-06-02",
+        "history_start": "2024-05-29",
+        "history_end": "2025-05-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.10864608034844585,
+        "max_weight": 0.15,
+        "covariance_condition": 234.23556539821126,
+        "min_eigenvalue": 2.9811899875700383e-05,
+        "shrinkage": 0.07193012239634321
+      },
+      {
+        "date": "2025-07-01",
+        "history_start": "2024-06-27",
+        "history_end": "2025-06-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.06474197900507284,
+        "max_weight": 0.15,
+        "covariance_condition": 237.75119153806247,
+        "min_eigenvalue": 2.9568156659245315e-05,
+        "shrinkage": 0.07114288927195152
+      },
+      {
+        "date": "2025-08-01",
+        "history_start": "2024-07-30",
+        "history_end": "2025-07-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.06971663289666725,
+        "max_weight": 0.15,
+        "covariance_condition": 227.56133454911367,
+        "min_eigenvalue": 3.0230923471995003e-05,
+        "shrinkage": 0.07383126214810157
+      },
+      {
+        "date": "2025-09-02",
+        "history_start": "2024-08-28",
+        "history_end": "2025-08-29",
+        "history_rows": 252,
+        "one_way_turnover": 0.06648926347302805,
+        "max_weight": 0.14780359241452734,
+        "covariance_condition": 202.04244360683975,
+        "min_eigenvalue": 3.160981006066749e-05,
+        "shrinkage": 0.08279541026822669
+      },
+      {
+        "date": "2025-10-01",
+        "history_start": "2024-09-27",
+        "history_end": "2025-09-30",
+        "history_rows": 252,
+        "one_way_turnover": 0.03662170127190271,
+        "max_weight": 0.15,
+        "covariance_condition": 186.60245184450156,
+        "min_eigenvalue": 3.304967942951186e-05,
+        "shrinkage": 0.08747817985540426
+      },
+      {
+        "date": "2025-11-03",
+        "history_start": "2024-10-30",
+        "history_end": "2025-10-31",
+        "history_rows": 252,
+        "one_way_turnover": 0.09417953909391802,
+        "max_weight": 0.15,
+        "covariance_condition": 196.15074642051349,
+        "min_eigenvalue": 3.227237312905131e-05,
+        "shrinkage": 0.08370464830254616
+      },
+      {
+        "date": "2025-12-01",
+        "history_start": "2024-11-26",
+        "history_end": "2025-11-28",
+        "history_rows": 252,
+        "one_way_turnover": 0.09843155159104269,
+        "max_weight": 0.15,
+        "covariance_condition": 196.84911124338507,
+        "min_eigenvalue": 3.179115154321466e-05,
+        "shrinkage": 0.08295031039440066
+      }
+    ]
+  },
+  "stress_results": {
+    "equal_weight": {
+      "covid_2020": {
+        "days": 51,
+        "annualized_volatility": 0.6908397679896061,
+        "max_drawdown": -0.3823952700080583,
+        "annual_one_way_turnover": 0.289284150648389,
+        "var95": {
+          "exceptions": 15,
+          "observations": 51,
+          "exception_rate": 0.29411764705882354,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 31.773740466548333,
+          "kupiec_pvalue": 1.732189345618611e-08
+        },
+        "var99": {
+          "exceptions": 13,
+          "observations": 51,
+          "exception_rate": 0.2549019607843137,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 62.59726725588051,
+          "kupiec_pvalue": 2.536051185986422e-15
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.6205766702615845,
+            "annualized_volatility": 0.6908397679896059,
+            "max_drawdown": -0.3823952700080583
+          },
+          "5": {
+            "annualized_return": -0.620686417757397,
+            "annualized_volatility": 0.6908505516570121,
+            "max_drawdown": -0.3824022201209669
+          },
+          "10": {
+            "annualized_return": -0.6207961379373037,
+            "annualized_volatility": 0.6908613505558852,
+            "max_drawdown": -0.38240917023387555
+          },
+          "25": {
+            "annualized_return": -0.621125134638984,
+            "annualized_volatility": 0.6908938386341582,
+            "max_drawdown": -0.3824300205726011
+          }
+        }
+      },
+      "inflation_2022": {
+        "days": 251,
+        "annualized_volatility": 0.23385685505408327,
+        "max_drawdown": -0.20808513468336454,
+        "annual_one_way_turnover": 0.2624249799986841,
+        "var95": {
+          "exceptions": 22,
+          "observations": 251,
+          "exception_rate": 0.08764940239043825,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 6.177718997325854,
+          "kupiec_pvalue": 0.012936894760989333
+        },
+        "var99": {
+          "exceptions": 11,
+          "observations": 251,
+          "exception_rate": 0.043824701195219126,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 15.820909062983162,
+          "kupiec_pvalue": 6.962879841575242e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.11990902422202798,
+            "annualized_volatility": 0.2338568550540833,
+            "max_drawdown": -0.20808513468336454
+          },
+          "5": {
+            "annualized_return": -0.12013995439961855,
+            "annualized_volatility": 0.2338523423453151,
+            "max_drawdown": -0.20823277951715247
+          },
+          "10": {
+            "annualized_return": -0.12037082922696796,
+            "annualized_volatility": 0.23384785414076453,
+            "max_drawdown": -0.208380400411456
+          },
+          "25": {
+            "annualized_return": -0.12106312172776146,
+            "annualized_volatility": 0.2338345365664901,
+            "max_drawdown": -0.20882311949051946
+          }
+        }
+      },
+      "april_2025": {
+        "days": 21,
+        "annualized_volatility": 0.4375923280644263,
+        "max_drawdown": -0.12073812846903265,
+        "annual_one_way_turnover": 0.2737840916674695,
+        "var95": {
+          "exceptions": 5,
+          "observations": 21,
+          "exception_rate": 0.23809523809523808,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 8.545984007571757,
+          "kupiec_pvalue": 0.0034628535602215173
+        },
+        "var99": {
+          "exceptions": 4,
+          "observations": 21,
+          "exception_rate": 0.19047619047619047,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 16.73273910941048,
+          "kupiec_pvalue": 4.30319707426434e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.10935516472557749,
+            "annualized_volatility": 0.43759232806442655,
+            "max_drawdown": -0.12073812846903265
+          },
+          "5": {
+            "annualized_return": -0.1095989785164696,
+            "annualized_volatility": 0.4375897214471677,
+            "max_drawdown": -0.12073812846903265
+          },
+          "10": {
+            "annualized_return": -0.10984273112399867,
+            "annualized_volatility": 0.4375871291996878,
+            "max_drawdown": -0.12073812846903254
+          },
+          "25": {
+            "annualized_return": -0.11057362198598941,
+            "annualized_volatility": 0.437579438678468,
+            "max_drawdown": -0.12073812846903254
+          }
+        }
+      }
+    },
+    "inverse_vol": {
+      "covid_2020": {
+        "days": 51,
+        "annualized_volatility": 0.6782455666008133,
+        "max_drawdown": -0.373573644786932,
+        "annual_one_way_turnover": 0.415141644886822,
+        "var95": {
+          "exceptions": 17,
+          "observations": 51,
+          "exception_rate": 0.3333333333333333,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 40.418396153118195,
+          "kupiec_pvalue": 2.0500176688929408e-10
+        },
+        "var99": {
+          "exceptions": 14,
+          "observations": 51,
+          "exception_rate": 0.27450980392156865,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 69.74380628784427,
+          "kupiec_pvalue": 6.752957057481256e-17
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.5987174277126577,
+            "annualized_volatility": 0.6782455666008131,
+            "max_drawdown": -0.373573644786932
+          },
+          "5": {
+            "annualized_return": -0.5988839867717544,
+            "annualized_volatility": 0.6782588759087892,
+            "max_drawdown": -0.37358569053328683
+          },
+          "10": {
+            "annualized_return": -0.599050485747151,
+            "annualized_volatility": 0.6782722154237889,
+            "max_drawdown": -0.37359773627964155
+          },
+          "25": {
+            "annualized_return": -0.5995496223564429,
+            "annualized_volatility": 0.6783124151930892,
+            "max_drawdown": -0.37363387351870625
+          }
+        }
+      },
+      "inflation_2022": {
+        "days": 251,
+        "annualized_volatility": 0.21917270298510452,
+        "max_drawdown": -0.20679359147048104,
+        "annual_one_way_turnover": 0.23398070213207248,
+        "var95": {
+          "exceptions": 25,
+          "observations": 251,
+          "exception_rate": 0.099601593625498,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 10.219418211200093,
+          "kupiec_pvalue": 0.0013896968134045498
+        },
+        "var99": {
+          "exceptions": 12,
+          "observations": 251,
+          "exception_rate": 0.04780876494023904,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 18.93810697570649,
+          "kupiec_pvalue": 1.3502838759720731e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.11240789552512576,
+            "annualized_volatility": 0.21917270298510458,
+            "max_drawdown": -0.20679359147048104
+          },
+          "5": {
+            "annualized_return": -0.11261555274004864,
+            "annualized_volatility": 0.21916891786971002,
+            "max_drawdown": -0.20692029448785398
+          },
+          "10": {
+            "annualized_return": -0.11282316554293192,
+            "annualized_volatility": 0.21916515335177522,
+            "max_drawdown": -0.20704697990064624
+          },
+          "25": {
+            "annualized_return": -0.11344573756545206,
+            "annualized_volatility": 0.21915398339331466,
+            "max_drawdown": -0.2074269305323725
+          }
+        }
+      },
+      "april_2025": {
+        "days": 21,
+        "annualized_volatility": 0.4065556972125321,
+        "max_drawdown": -0.11438838997389356,
+        "annual_one_way_turnover": 0.23029140389326777,
+        "var95": {
+          "exceptions": 6,
+          "observations": 21,
+          "exception_rate": 0.2857142857142857,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 12.36026339369359,
+          "kupiec_pvalue": 0.0004385688128277792
+        },
+        "var99": {
+          "exceptions": 4,
+          "observations": 21,
+          "exception_rate": 0.19047619047619047,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 16.73273910941048,
+          "kupiec_pvalue": 4.30319707426434e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.13826723926179718,
+            "annualized_volatility": 0.4065556972125321,
+            "max_drawdown": -0.11438838997389356
+          },
+          "5": {
+            "annualized_return": -0.13846566796398285,
+            "annualized_volatility": 0.40655376815245464,
+            "max_drawdown": -0.11438838997389356
+          },
+          "10": {
+            "annualized_return": -0.13866405478139787,
+            "annualized_volatility": 0.40655185001844674,
+            "max_drawdown": -0.11438838997389356
+          },
+          "25": {
+            "annualized_return": -0.1392589640053754,
+            "annualized_volatility": 0.40654616117438286,
+            "max_drawdown": -0.11438838997389356
+          }
+        }
+      }
+    },
+    "sample": {
+      "covid_2020": {
+        "days": 51,
+        "annualized_volatility": 0.5715382880773596,
+        "max_drawdown": -0.29482152747070267,
+        "annual_one_way_turnover": 2.674459011569266,
+        "var95": {
+          "exceptions": 14,
+          "observations": 51,
+          "exception_rate": 0.27450980392156865,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 27.731523671209075,
+          "kupiec_pvalue": 1.393729662713798e-07
+        },
+        "var99": {
+          "exceptions": 14,
+          "observations": 51,
+          "exception_rate": 0.27450980392156865,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 69.74380628784427,
+          "kupiec_pvalue": 6.752957057481256e-17
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.2979102650392508,
+            "annualized_volatility": 0.5715382880773596,
+            "max_drawdown": -0.29482152747070267
+          },
+          "5": {
+            "annualized_return": -0.29978579517977333,
+            "annualized_volatility": 0.5715660722997608,
+            "max_drawdown": -0.29490845926924636
+          },
+          "10": {
+            "annualized_return": -0.3016569709332748,
+            "annualized_volatility": 0.5715954250125106,
+            "max_drawdown": -0.29499539106779016
+          },
+          "25": {
+            "annualized_return": -0.3072444582287399,
+            "annualized_volatility": 0.5716928916123506,
+            "max_drawdown": -0.295256186463421
+          }
+        }
+      },
+      "inflation_2022": {
+        "days": 251,
+        "annualized_volatility": 0.16349994683399585,
+        "max_drawdown": -0.18004520379324684,
+        "annual_one_way_turnover": 1.4379166666700698,
+        "var95": {
+          "exceptions": 28,
+          "observations": 251,
+          "exception_rate": 0.11155378486055777,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 15.062503812739862,
+          "kupiec_pvalue": 0.00010400894902165267
+        },
+        "var99": {
+          "exceptions": 11,
+          "observations": 251,
+          "exception_rate": 0.043824701195219126,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 15.820909062983162,
+          "kupiec_pvalue": 6.962879841575242e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.035965447237252035,
+            "annualized_volatility": 0.16349994683399588,
+            "max_drawdown": -0.18004520379324684
+          },
+          "5": {
+            "annualized_return": -0.03735075018049572,
+            "annualized_volatility": 0.16346530849919585,
+            "max_drawdown": -0.1805574694167582
+          },
+          "10": {
+            "annualized_return": -0.03873425769679728,
+            "annualized_volatility": 0.16343186638062623,
+            "max_drawdown": -0.181069491020322
+          },
+          "25": {
+            "annualized_return": -0.04287402847591271,
+            "annualized_volatility": 0.16333872453832401,
+            "max_drawdown": -0.18260409253699206
+          }
+        }
+      },
+      "april_2025": {
+        "days": 21,
+        "annualized_volatility": 0.3297023268480575,
+        "max_drawdown": -0.09467513471190303,
+        "annual_one_way_turnover": 1.7466228690616585,
+        "var95": {
+          "exceptions": 7,
+          "observations": 21,
+          "exception_rate": 0.3333333333333333,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 16.64286900422514,
+          "kupiec_pvalue": 4.5119614644458376e-05
+        },
+        "var99": {
+          "exceptions": 5,
+          "observations": 21,
+          "exception_rate": 0.23809523809523808,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 23.320588458823188,
+          "kupiec_pvalue": 1.3712431210278264e-06
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.1909786832760012,
+            "annualized_volatility": 0.3297023268480577,
+            "max_drawdown": -0.09467513471190303
+          },
+          "5": {
+            "annualized_return": -0.19239060775722716,
+            "annualized_volatility": 0.3296917811805271,
+            "max_drawdown": -0.09467513471190292
+          },
+          "10": {
+            "annualized_return": -0.19380027312736736,
+            "annualized_volatility": 0.32968200834500255,
+            "max_drawdown": -0.09467513471190303
+          },
+          "25": {
+            "annualized_return": -0.19801574741475814,
+            "annualized_volatility": 0.32965732749061627,
+            "max_drawdown": -0.09467513471190303
+          }
+        }
+      }
+    },
+    "ewma": {
+      "covid_2020": {
+        "days": 51,
+        "annualized_volatility": 0.5656261078823337,
+        "max_drawdown": -0.2801114314742691,
+        "annual_one_way_turnover": 3.514956337554924,
+        "var95": {
+          "exceptions": 14,
+          "observations": 51,
+          "exception_rate": 0.27450980392156865,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 27.731523671209075,
+          "kupiec_pvalue": 1.393729662713798e-07
+        },
+        "var99": {
+          "exceptions": 13,
+          "observations": 51,
+          "exception_rate": 0.2549019607843137,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 62.59726725588051,
+          "kupiec_pvalue": 2.536051185986422e-15
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.22541233167177044,
+            "annualized_volatility": 0.5656261078823336,
+            "max_drawdown": -0.2801114314742691
+          },
+          "5": {
+            "annualized_return": -0.22813069509173123,
+            "annualized_volatility": 0.565597724990783,
+            "max_drawdown": -0.2803175541016636
+          },
+          "10": {
+            "annualized_return": -0.2308405175257554,
+            "annualized_volatility": 0.5655715821817926,
+            "max_drawdown": -0.280523676729058
+          },
+          "25": {
+            "annualized_return": -0.23891897582127475,
+            "annualized_volatility": 0.5655065972237838,
+            "max_drawdown": -0.28114204461124137
+          }
+        }
+      },
+      "inflation_2022": {
+        "days": 251,
+        "annualized_volatility": 0.1632631615455636,
+        "max_drawdown": -0.19636897014250665,
+        "annual_one_way_turnover": 2.2464424196602892,
+        "var95": {
+          "exceptions": 26,
+          "observations": 251,
+          "exception_rate": 0.10358565737051793,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 11.748886224155854,
+          "kupiec_pvalue": 0.0006087965817821109
+        },
+        "var99": {
+          "exceptions": 11,
+          "observations": 251,
+          "exception_rate": 0.043824701195219126,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 15.820909062983162,
+          "kupiec_pvalue": 6.962879841575242e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.04844689472476693,
+            "annualized_volatility": 0.16326316154556372,
+            "max_drawdown": -0.19636897014250665
+          },
+          "5": {
+            "annualized_return": -0.05058232459971068,
+            "annualized_volatility": 0.1632180344842826,
+            "max_drawdown": -0.19716648075479237
+          },
+          "10": {
+            "annualized_return": -0.052713401041041164,
+            "annualized_volatility": 0.16317563022899564,
+            "max_drawdown": -0.19796337927998486
+          },
+          "25": {
+            "annualized_return": -0.05908058965449181,
+            "annualized_volatility": 0.16306477485873244,
+            "max_drawdown": -0.20035040573095597
+          }
+        }
+      },
+      "april_2025": {
+        "days": 21,
+        "annualized_volatility": 0.32588298835016494,
+        "max_drawdown": -0.09529360714433621,
+        "annual_one_way_turnover": 3.4135047874296944,
+        "var95": {
+          "exceptions": 7,
+          "observations": 21,
+          "exception_rate": 0.3333333333333333,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 16.64286900422514,
+          "kupiec_pvalue": 4.5119614644458376e-05
+        },
+        "var99": {
+          "exceptions": 4,
+          "observations": 21,
+          "exception_rate": 0.19047619047619047,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 16.73273910941048,
+          "kupiec_pvalue": 4.30319707426434e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.21672383635351022,
+            "annualized_volatility": 0.3258829883501649,
+            "max_drawdown": -0.09529360714433621
+          },
+          "5": {
+            "annualized_return": -0.2193933741601347,
+            "annualized_volatility": 0.32587904174325244,
+            "max_drawdown": -0.09555095877793862
+          },
+          "10": {
+            "annualized_return": -0.22205456954617153,
+            "annualized_volatility": 0.3258780731189472,
+            "max_drawdown": -0.09580831041154148
+          },
+          "25": {
+            "annualized_return": -0.2299883379488188,
+            "annualized_volatility": 0.3258930349990211,
+            "max_drawdown": -0.09658036531234915
+          }
+        }
+      }
+    },
+    "ledoit_wolf": {
+      "covid_2020": {
+        "days": 51,
+        "annualized_volatility": 0.571952973524947,
+        "max_drawdown": -0.2958863340745429,
+        "annual_one_way_turnover": 2.7604999436633695,
+        "var95": {
+          "exceptions": 14,
+          "observations": 51,
+          "exception_rate": 0.27450980392156865,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 27.731523671209075,
+          "kupiec_pvalue": 1.393729662713798e-07
+        },
+        "var99": {
+          "exceptions": 14,
+          "observations": 51,
+          "exception_rate": 0.27450980392156865,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 69.74380628784427,
+          "kupiec_pvalue": 6.752957057481256e-17
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.3049041583284574,
+            "annualized_volatility": 0.571952973524947,
+            "max_drawdown": -0.2958863340745429
+          },
+          "5": {
+            "annualized_return": -0.3068206667684681,
+            "annualized_volatility": 0.5719814151831167,
+            "max_drawdown": -0.29597878235064157
+          },
+          "10": {
+            "annualized_return": -0.30873257434225765,
+            "annualized_volatility": 0.5720115054278924,
+            "max_drawdown": -0.2960712306267407
+          },
+          "25": {
+            "annualized_return": -0.31444078642116224,
+            "annualized_volatility": 0.5721116650093714,
+            "max_drawdown": -0.2963485754550369
+          }
+        }
+      },
+      "inflation_2022": {
+        "days": 251,
+        "annualized_volatility": 0.16349779549000776,
+        "max_drawdown": -0.1806204670650874,
+        "annual_one_way_turnover": 1.4529458070867896,
+        "var95": {
+          "exceptions": 29,
+          "observations": 251,
+          "exception_rate": 0.11553784860557768,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 16.84123482055594,
+          "kupiec_pvalue": 4.0640591150188124e-05
+        },
+        "var99": {
+          "exceptions": 12,
+          "observations": 251,
+          "exception_rate": 0.04780876494023904,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 18.93810697570649,
+          "kupiec_pvalue": 1.3502838759720731e-05
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.0362680771558781,
+            "annualized_volatility": 0.16349779549000773,
+            "max_drawdown": -0.1806204670650874
+          },
+          "5": {
+            "annualized_return": -0.037667409903145876,
+            "annualized_volatility": 0.16346310152759752,
+            "max_drawdown": -0.18113065938811201
+          },
+          "10": {
+            "annualized_return": -0.03906490906562565,
+            "annualized_volatility": 0.16342962258337732,
+            "max_drawdown": -0.18164061009430044
+          },
+          "25": {
+            "annualized_return": -0.04324642652015731,
+            "annualized_volatility": 0.16333648319552282,
+            "max_drawdown": -0.18316901331951696
+          }
+        }
+      },
+      "april_2025": {
+        "days": 21,
+        "annualized_volatility": 0.329513745801716,
+        "max_drawdown": -0.09430896248111775,
+        "annual_one_way_turnover": 1.5904979793722376,
+        "var95": {
+          "exceptions": 7,
+          "observations": 21,
+          "exception_rate": 0.3333333333333333,
+          "nominal_exception_rate": 0.050000000000000044,
+          "kupiec_lr": 16.64286900422514,
+          "kupiec_pvalue": 4.5119614644458376e-05
+        },
+        "var99": {
+          "exceptions": 5,
+          "observations": 21,
+          "exception_rate": 0.23809523809523808,
+          "nominal_exception_rate": 0.010000000000000009,
+          "kupiec_lr": 23.320588458823188,
+          "kupiec_pvalue": 1.3712431210278264e-06
+        },
+        "cost_sensitivity": {
+          "0": {
+            "annualized_return": -0.19402904283007327,
+            "annualized_volatility": 0.32951374580171616,
+            "max_drawdown": -0.09430896248111775
+          },
+          "5": {
+            "annualized_return": -0.1953100039479262,
+            "annualized_volatility": 0.32950491588468317,
+            "max_drawdown": -0.09430896248111775
+          },
+          "10": {
+            "annualized_return": -0.19658909859380191,
+            "annualized_volatility": 0.3294967269926186,
+            "max_drawdown": -0.09430896248111786
+          },
+          "25": {
+            "annualized_return": -0.20041520841185234,
+            "annualized_volatility": 0.32947600692549456,
+            "max_drawdown": -0.09430896248111775
+          }
+        }
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "threads": 2
+  },
+  "limitations": [
+    "Research portfolios are not executable instruments or point-in-time constituents",
+    "Revised historical CRSP snapshot and 2025 methodology transition limit investability claims",
+    "Hypothetical costs exclude spreads, financing, internal constituent turnover and market impact",
+    "Gaussian VaR with monthly-frozen covariance may fail in crises; Kupiec test assumes idealized observations",
+    "Stress windows are historical illustrations, not independent confirmation or regulatory validation"
+  ],
+  "elapsed_seconds": 3.275319814682007
+}
