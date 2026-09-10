@@ -6,6 +6,12 @@ The answer in this experiment is mixed: minimum-variance baskets have lower real
 
 ![Held-out volatility and drawdown](outputs/risk-comparison.png)
 
+## Dataset at a glance
+
+The Kenneth French **48-industry value-weighted daily-return** dataset is a table of dates × industry research portfolios: **9,067 trading-date observations across 1990–2025**, each with 48 returns. A row is one day's research-basket returns, not an individual stock trade or a directly executable instrument.
+
+1990–2012 supplies historical context, 2013–2018 is the development period for EWMA decay selection, and **2019–2025 supplies 1,760 test days and 84 monthly rebalances**. Each covariance estimate uses only the prior 252 available trading days; this is rolling historical estimation, not a fixed neural-network training split. The downloaded July 2026 source vintage is hash-pinned, with source/protocol details below.
+
 ## Technical snapshot
 
 | Question | Implementation |
