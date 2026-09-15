@@ -1,0 +1,283 @@
+{
+  "title": "RiskLens",
+  "subtitle": "A dated, constrained portfolio allocation",
+  "eyebrow": "ACTUAL OPTIMIZER OUTPUT",
+  "context": "2019-01-02 · EWMA 0.99 · 252 prior trading days · 15% cap",
+  "columns": [
+    "Rank",
+    "Industry research basket",
+    "Allocation"
+  ],
+  "rows": [
+    [
+      "1",
+      "Gold",
+      "15.00%"
+    ],
+    [
+      "2",
+      "Util",
+      "15.00%"
+    ],
+    [
+      "3",
+      "Meals",
+      "15.00%"
+    ],
+    [
+      "4",
+      "Soda",
+      "15.00%"
+    ],
+    [
+      "5",
+      "Agric",
+      "10.18%"
+    ],
+    [
+      "6",
+      "Smoke",
+      "8.44%"
+    ],
+    [
+      "7",
+      "Food",
+      "8.38%"
+    ],
+    [
+      "8",
+      "Beer",
+      "4.54%"
+    ],
+    [
+      "9",
+      "Telcm",
+      "3.14%"
+    ],
+    [
+      "10",
+      "PerSv",
+      "2.73%"
+    ]
+  ],
+  "raw": {
+    "date": "2019-01-02",
+    "history_start": "2017-12-29",
+    "history_end": "2018-12-31",
+    "weights": [
+      {
+        "industry": "Gold",
+        "weight": 0.15
+      },
+      {
+        "industry": "Util",
+        "weight": 0.15
+      },
+      {
+        "industry": "Meals",
+        "weight": 0.15
+      },
+      {
+        "industry": "Soda",
+        "weight": 0.14999999999999988
+      },
+      {
+        "industry": "Agric",
+        "weight": 0.10179045415475894
+      },
+      {
+        "industry": "Smoke",
+        "weight": 0.084358564661628
+      },
+      {
+        "industry": "Food",
+        "weight": 0.08383525010386034
+      },
+      {
+        "industry": "Beer",
+        "weight": 0.04535850000762921
+      },
+      {
+        "industry": "Telcm",
+        "weight": 0.031426747309379076
+      },
+      {
+        "industry": "PerSv",
+        "weight": 0.027267759048229888
+      },
+      {
+        "industry": "Guns",
+        "weight": 0.016398341062288577
+      },
+      {
+        "industry": "Toys",
+        "weight": 0.009564383652225856
+      },
+      {
+        "industry": "MedEq",
+        "weight": 1.2304177234790195e-16
+      },
+      {
+        "industry": "Books",
+        "weight": 7.83875228859116e-17
+      },
+      {
+        "industry": "Txtls",
+        "weight": 7.622389263261506e-17
+      },
+      {
+        "industry": "Oil",
+        "weight": 6.217419480760535e-17
+      },
+      {
+        "industry": "ElcEq",
+        "weight": 6.135467598991883e-17
+      },
+      {
+        "industry": "Coal",
+        "weight": 5.1837508461676294e-17
+      },
+      {
+        "industry": "Trans",
+        "weight": 5.045238331007384e-17
+      },
+      {
+        "industry": "Clths",
+        "weight": 4.926805745738772e-17
+      },
+      {
+        "industry": "LabEq",
+        "weight": 4.859404872705591e-17
+      },
+      {
+        "industry": "Fin",
+        "weight": 3.5544459274519346e-17
+      },
+      {
+        "industry": "Cnstr",
+        "weight": 3.1399916373892675e-17
+      },
+      {
+        "industry": "RlEst",
+        "weight": 2.858029811313708e-17
+      },
+      {
+        "industry": "Comps",
+        "weight": 2.3755086246709513e-17
+      },
+      {
+        "industry": "Other",
+        "weight": 1.0750599214053329e-17
+      },
+      {
+        "industry": "Paper",
+        "weight": 9.602773059625172e-18
+      },
+      {
+        "industry": "Insur",
+        "weight": 7.177898755085555e-18
+      },
+      {
+        "industry": "Ships",
+        "weight": 6.822412564904814e-18
+      },
+      {
+        "industry": "Drugs",
+        "weight": 1.9834241941339252e-18
+      },
+      {
+        "industry": "Fun",
+        "weight": 0.0
+      },
+      {
+        "industry": "Hshld",
+        "weight": 0.0
+      },
+      {
+        "industry": "Hlth",
+        "weight": 0.0
+      },
+      {
+        "industry": "Chems",
+        "weight": 0.0
+      },
+      {
+        "industry": "Rubbr",
+        "weight": 0.0
+      },
+      {
+        "industry": "BldMt",
+        "weight": 0.0
+      },
+      {
+        "industry": "Steel",
+        "weight": 0.0
+      },
+      {
+        "industry": "FabPr",
+        "weight": 0.0
+      },
+      {
+        "industry": "Mach",
+        "weight": 0.0
+      },
+      {
+        "industry": "Autos",
+        "weight": 0.0
+      },
+      {
+        "industry": "Aero",
+        "weight": 0.0
+      },
+      {
+        "industry": "Mines",
+        "weight": 0.0
+      },
+      {
+        "industry": "BusSv",
+        "weight": 0.0
+      },
+      {
+        "industry": "Chips",
+        "weight": 0.0
+      },
+      {
+        "industry": "Boxes",
+        "weight": 0.0
+      },
+      {
+        "industry": "Whlsl",
+        "weight": 0.0
+      },
+      {
+        "industry": "Rtail",
+        "weight": 0.0
+      },
+      {
+        "industry": "Banks",
+        "weight": 0.0
+      }
+    ],
+    "sum_weights": 1.0000000000000004,
+    "max_weight": 0.15,
+    "daily_sigma": 0.0072566688115925345
+  },
+  "note": "Ten largest weights shown; the JSON contains all 48. Weights sum to one and respect the cap. Historical industry research baskets are not executable instruments; this is not an investment recommendation.",
+  "input": "252-day historical 48-industry return matrix",
+  "output": "48 constrained minimum-variance allocation weights",
+  "sources": [
+    {
+      "path": "data/returns.csv",
+      "sha256": "1c98c420fc57a6e2fce8bc29a11ec4b0f4ae2cce1996f909806e9d072facec97"
+    },
+    {
+      "path": "outputs/evaluation.json",
+      "sha256": "051f382dbe69a164644e1474a18c6c7887221ffd819f4f45208c37141f61b24a"
+    }
+  ],
+  "source_repository": "https://github.com/HarshSaand/risklens",
+  "extraction": "python docs/extract_showcase.py --source /path/to/reproduced/project",
+  "dataset_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+  "source_code_commit": "5529dbea6f35f982ab73a754dc8731651f382b3c",
+  "extractor_sha256": "3ec17aa6da3f2027876a7e4da9be323660b1a931d3b76d8b83a212818e6a6d33"
+}

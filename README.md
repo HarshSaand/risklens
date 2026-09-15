@@ -1,5 +1,30 @@
 # RiskLens — Portfolio Risk and Stress Testing
 
+## Actual output example
+
+![A dated, constrained portfolio allocation.](docs/output-showcase.png)
+
+**Input:** 252-day historical 48-industry return matrix. **Output:** 48 constrained minimum-variance allocation weights.
+
+Ten largest weights shown; the JSON contains all 48. Weights sum to one and respect the cap. Historical industry research baskets are not executable instruments; this is not an investment recommendation.
+
+[Inspect the full output record and source hashes](docs/output-example.json) · [Open the standalone review page](docs/output-showcase.html) · [Original dataset](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html)
+
+### Reproduce this example
+
+Follow the project setup/data steps below first. `--source` points to a reproduced project directory with its local data, saved predictions or checkpoints; use `.` when running in that directory. The exporter never silently invents missing inputs.
+
+```bash
+python docs/extract_showcase.py --source /path/to/reproduced/project
+python docs/render_showcase.py
+# Open docs/output-showcase.html directly, or capture the image with Chrome:
+npm install --no-save playwright
+node docs/capture_showcase.mjs
+```
+
+The JSON records the exact source-relative filenames, SHA-256 hashes and code revision. Rendering uses saved values; displayed decimals are rounded only for readability. Raw datasets and model checkpoints remain outside this documentation bundle.
+
+
 RiskLens asks a quantitative-risk question: **does a more stable covariance estimate produce a less volatile portfolio, and does that make its tail-risk forecast reliable?** It compares sample, exponentially weighted and Ledoit–Wolf covariance estimates on real daily industry research returns, with constrained optimization, chronological evaluation and explicit transaction-cost assumptions.
 
 The answer in this experiment is mixed: minimum-variance baskets have lower realized volatility and drawdown than equal weighting, but more turnover and lower hypothetical returns. All tested Gaussian 99% VaR models substantially exceed the nominal exception rate. **Lower volatility is not a reliable-tail guarantee or evidence of trading alpha.**
