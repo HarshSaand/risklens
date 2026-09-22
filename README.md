@@ -1,5 +1,7 @@
 # RiskLens — Portfolio Risk and Stress Testing
 
+[Read the project report (PDF)](docs/PROJECT_REPORT.pdf) · [Explore the explanation and flow diagram](docs/PROJECT_REPORT.md)
+
 ## Actual output example
 
 ![A dated, constrained portfolio allocation.](docs/output-showcase.png)
